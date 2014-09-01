@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: background-color 0.35s linear;
 }
 .navbar-menu {
-  max-width: 550px;
+  max-width: 569px;
   margin: 0 auto;
   float:none;
 }
@@ -32,6 +32,9 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-menu a:hover, .navbar-menu a.active {
   color:#50A6FC;
   transition: color 0.15s ease;
+}
+.navbar-menu a i{
+  font-size: 19px;
 }
 .img-media {
   max-width: 120px;
@@ -91,4 +94,10 @@ h1, h2, h3, h4, h5, h6 {
 .font-xx-large {
   font-size: 37px;
   font-weight: normal;
+}
+/*Tablet and mobile*/
+@media screen and (min-width:0px) and (max-width:800px) {
+  .logo img {
+    margin-left:10px;
+  }
 }
