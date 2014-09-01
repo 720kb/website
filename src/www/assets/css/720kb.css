@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: background-color 0.35s linear;
 }
 .navbar-menu {
-  max-width: 569px;
+  max-width: 550px;
   margin: 0 auto;
   float:none;
 }
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*Tablet and mobile*/
 @media screen and (min-width:0px) and (max-width:800px) {
-  .logo img {
-    margin-left:10px;
+  .navbar-menu {
+    max-width: 85%;
   }
 }
