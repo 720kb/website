@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   color:#000;
   text-shadow:0px 0px 0px white;
 }
-.navbar-menu a:hover, .navbar-menu a.active {
+.navbar-menu a:hover, .navbar-menu a.active, .navbar-menu a.active i {
   color:#50A6FC;
   transition: color 0.15s ease;
 }
@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #EFF5F7;
 }
 .color-grey {
-  color:smoke;
+  color:smoke;  
 }
 .color-lightblue {
   color: #50A6FC;
