@@ -100,4 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-menu {
     max-width: 85%;
   }
+  .navbar-menu .logo img {
+    margin-left:4px;
+  }
 }
