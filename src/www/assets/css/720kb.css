@@ -10,12 +10,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 /*Extra*/
-.navbar {
-	transition: background-color 0.08s linear;
-}
-.navbar.bg-body {
-  transition: background-color 0.35s linear;
-}
 .navbar-menu {
   max-width: 550px;
   margin: 0 auto;
