@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .img-media {
   max-width: 120px;
+  border-radius:50px 0 50px 50px;
 }
 /*Layout*/
 .line-max {
