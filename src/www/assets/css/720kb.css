@@ -9,6 +9,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
+.link{
+  color:inherit;
+}
+.link:hover{
+  color:#50A6FC;
+}
 /*Extra*/
 .navbar-menu {
   max-width: 550px;
@@ -31,10 +37,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 19px;
 }
 .img-media {
-  max-width: 120px;
-  -webkit-border-radius:50px 0 50px 50px;
-  -moz-border-radius:50px 0 50px 50px;
-  border-radius:50px 0 50px 50px;
+  max-width: 80px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
 }
 /*Layout*/
 .line-max {
