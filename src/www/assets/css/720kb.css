@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #EFF5F7;
 }
 .color-grey {
-  color:smoke;  
+  color:smoke;
 }
 .color-lightblue {
   color: #50A6FC;
@@ -90,6 +90,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #F82E71;
 }
 /*Font*/
+.font-x-small{
+  font-size: 12px;
+}
 .font-x-large {
   font-size: 28px;
   font-weight: normal;
