@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   float:none;
 }
 .navbar-menu .nav a {
-  padding:0 3%;
+  margin-left:5%;
   line-height: 21px;
   font-size:16.5px;
   font-weight: 500;
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*Layout*/
 .line-max {
-  max-width: 855px;
+  max-width: 550px;
   margin:0 auto;
   float:none;
 }
@@ -94,11 +94,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .font-x-large {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
 }
 .font-xx-large {
-  font-size: 37px;
+  font-size: 30px;
   font-weight: normal;
 }
 /*Tablet and mobile*/
