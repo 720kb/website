@@ -91,6 +91,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #F82E71;
 }
 /*Font*/
+.font-x-medium{
+  font-size: 19.5px;
+}
 .font-x-small {
   font-size: 12px;
 }
@@ -105,9 +108,9 @@ h1, h2, h3, h4, h5, h6 {
 /*Tablet and mobile*/
 @media screen and (min-width:0px) and (max-width:800px) {
   .navbar-menu {
-      max-width: 85%;
+    max-width: 85%;
   }
   .navbar-menu .logo img {
-      margin-left:4px;
+    margin-left:4px;
   }
 }
