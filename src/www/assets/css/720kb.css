@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
   color:#50A6FC;
 }
 /*Extra*/
+
 .navbar-menu {
   max-width: 550px;
   margin: 0 auto;
@@ -66,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #F92F54;
 }
 .bg-body {
-  background-color:#F6F9FA;
+  background-color:#FfFfff;
 }
 .bg-body-light {
   background-color: rgba(246, 249, 250, 0.45);
@@ -104,6 +105,9 @@ h1, h2, h3, h4, h5, h6 {
 .font-xx-large {
   font-size: 30px;
   font-weight: normal;
+}
+.btn-mini{
+  padding:3px;
 }
 /*Tablet and mobile*/
 @media screen and (min-width:0px) and (max-width:800px) {
