@@ -1,0 +1,27 @@
+#cookies{
+  font-family: Arial;
+  display:none;
+  position:fixed;
+  left:0;
+  bottom:0;
+  height:auto;
+  min-height:30px;
+  width:100%;
+  float:none;
+  font-size: 12.5px;
+  margin:0 auto;
+  text-align: center;
+  background:#1E9EFA;
+  color:white;
+  z-index:999999;
+  line-height: 35px;
+}#cookies button{
+ background:none;
+ border: 1px solid rgba(0,0,0,0.2);
+ margin-left:5px;
+ border-radius:3px;
+ padding:4px 12px;
+ color:white;
+ vertical-align: middle;
+ font-size: 10px;
+}
