@@ -1,7 +1,9 @@
 <!doctype html>
-<html>
+<html ng-app="website">
 <head>
-	<link rel="stylesheet" type="text/css" href="vendor/csshelper/dist/helper.min.css">
+	<link rel="stylesheet" type="text/css" href="bower/csshelper/dist/helper.min.css">
+		<link rel="stylesheet" type="text/css" href="bower/animate.css/animate.min.css">
+		<link rel="stylesheet" type="text/css" href="bower/angular-fx/dist/angular-fx.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/720kb.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/720kb.cookies.css">
 	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
@@ -14,15 +16,15 @@
 	<meta property="og:description" content="720kb.net web and mobile apps with an eye to the Open Source."/>
 	<title>720kb - web & mobile development</title>
 </head>
-<body class="bg-body" id="body">
-	<div class="line-compress fixed layer1 top navbar bg-body">
+<body class="bg-body" id="body" ng-controller="Ctrl">
+	<div class="line-compress fixed layer1 top navbar">
 		<div class="navbar-menu">
 			<div class="separator15"></div>
 			<div class="line">
 				<div class="col2">
-					<a data-scroll href="#body" class="logo color-lightblue">
+					<a href="#hello" ng-click="setActiveLink('hello')" class="logo color-lightblue">
 						<div class="separator5"></div>
-						<img src="assets/img/logo.png"/>
+					 	720kb
 					</a>
 				</div>
 				<div class="col8 nav" id="top-menu">
@@ -30,22 +32,22 @@
 						<div class="line right-content">
 							<div class="separator5"></div>
 							<div class="desktop tablet">
-								<a data-scroll href="#apps">
-									Apps
-								</a>
-								<a data-scroll href="#opensource">
-									Opensource
+								<a href="//blog.720kb.net" target="_blank">
+									Mission
 								</a>
 								<a href="//blog.720kb.net" target="_blank">
-									Blog
+									Contact us
+								</a>
+								<a href="//blog.720kb.net" target="_blank">
+									News
 								</a>
 							</div>
 							<div class="mobile">
-								<a data-scroll href="#apps">
-									<i class="fa fa-cubes"></i>
+								<a href="#apps">
+									<i class="fa fa-rocket"></i>
 								</a>
-								<a data-scroll href="#opensource">
-									<i class="fa fa-code"></i>
+								<a href="#code">
+									<i class="fa fa-edit"></i>
 								</a>
 								<a href="//blog.720kb.net" target="_blank">
 									<i class="fa fa-rss"></i>
@@ -58,462 +60,146 @@
 			<div class="separator15"></div>
 		</div>
 	</div>
-	<div class="line" id="hello">
-		<div class="separator50"></div>
-		<div class="separator100"></div>
-		<div class="separator100"></div>
-		<h1 class="center-content font-xx-large">Web and mobile development</h1>
-		<h2 class="center-content color-muted font-x-medium">Hello, nice to see you here.</h2>
-		<div class="separator100"></div>
-		<div class="separator100"></div>
-		<div class="separator100"></div>
+	<div id="hello" class="line article" ng-show="activeLink === 'hello'">
+		<div class="article-title">
+		<h1 class="center-content font-xxx-large color-lightblue" ngfx-pulse="true">Hello</h1>
+		<h2 class="center-content font-x-medium color-muted">Nice to see you.</h2>
 	</div>
-
+	</div>
 	<!--apps-->
-	<div id="apps" class="line bg-light">
-		<div class="line-max">
-			<div class="separator50 desktop"></div>
-			<div class="separator50 desktop tablet mobile"></div>
+	<div id="apps" class="line article" ng-show="activeLink === 'apps'">
+		<div class="article-title">
+			<h1 class="center-content font-xxx-large color-lightblue">Apps</h1>
+			<h2 class="center-content font-x-medium color-muted">We bring apps to life.</h2>
+		</div>
+		<div class="article-content bg-light">
 			<div class="separator50"></div>
-			<div class="line">
-				<div class="col3 line-tablet">
-					<h2 class="line font-x-large">Apps</h2>
-					<h3 class="line color-muted">Try them out</h3>
-					<div class="separator30"></div>
-				</div>
-				<div class="col7 line-tablet">
-					<div class="col9 offset-left1 line-tablet">
-						<div class="separator10"></div>
-						<div class="line">
-							<img class="col3 img-media bg-body radius3" src="assets/img/fuffa.png" width="120"/>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<h3>Fuffa</h3>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										Chat and keep in touch through emotions.
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini radius3 bg-muted-inverse color-black center-content" href="//getfuffa.com" target="_blank">
-											Try now
-										</a>
-									</div>
-								</div>
-							</h5>
-						</div>
-						<div class="separator15"></div>
-						<div class="separator15"></div>
-						<div class="line">
-							<img class="col3 img-media bg-body radius3" src="assets/img/realtempo.png" width="120"/>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<h3>Realtempo <small class="color-muted">(&beta;eta)</small></h3>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										Experimental online and realtime rehearsal rooms for musicians.
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini bg-muted-inverse radius3 color-black center-content" href="//realtempo.com" target="_blank">
-											Try the <span class="color-lightblue">beta</span>
-										</a>
-									</div>
-								</div>
-							</h5>
-						</div><div class="separator15"></div>
-						<div class="separator15"></div>
-						<div class="line">
-							<img class="col3 img-media bg-body radius3" src="assets/img/bitnfc.png" width="120"/>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<h3>BitNFC <small class="color-muted">(&beta;eta)</small></h3>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										Bitcoin NFC enabled Mobile Wallet.
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini bg-muted-inverse radius3 color-black center-content" href="//bitnfc.org" target="_blank">
-											Try the <span class="color-lightblue">beta</span>
-										</a>
-									</div>
-								</div>
-							</h5>
-						</div>
-					</div>
-				</div>
+			<div class="article-menu center-content">
+					<a class="active radius20">
+						Music
+					</a>
+					<a>
+						Com
+					</a>
+					<a>
+						Bitcoin
+					</a>
 			</div>
-			<div class="separator100"></div>
-			<div class="separator100"></div>
+		<div class="line-compress line-max">
+				<div class="separator30"></div>
+			<div class="col8 offset-left1 line-mobile center-content">
+				<span class="bg-white radius3 media">
+					<div class="separator15"></div>
+					<img src="assets/img/realtempo.png" class="v-middle" width="120"/>
+					<div class="separator15"></div>
+				<div class="center-content color-muted">
+				 Experimental online and realtime
+				</div>
+				<div class="center-content color-muted">
+				 rehearsal rooms for musicians
+				</div>
+					<div class="separator10"></div>
+				</span>
+				<div class="separator15"></div>
+			<div class="center-content">
+				<a class="btn-badge btn-small btn-block center-content color-lightblue">
+				Try the &beta;eta
+				</a>
+			</div>
+			</div>
+		</div>
 		</div>
 	</div>
-
-	<!--open source-->
-	<div id="opensource" class="line">
-		<div class="line-max">
-			<div class="separator50 desktop"></div>
-			<div class="separator50 desktop tablet mobile"></div>
-			<div class="separator50"></div>
-			<div class="line">
-				<div class="col3 line-tablet">
-					<h2 class="line font-x-large">Open Source</h2>
-					<h3 class="line color-muted">Projects on
-						<a href="//github.com/720kb" class="color-lightblue">
-							Github
-						</a>
-					</h3>
-					<div class="separator30"></div>
-				</div>
-				<div class="col7 line-tablet">
-					<div class="col9 offset-left1 line-tablet">
-						<div class="separator10"></div>
-						<div class="line radius3">
-							<a href="github.com/720kb/TeachMusicRTC"  target="_blank" class="link">
-								<img class="col3 img-media bg-light radius3 toggle-opacity-inverse-hover" src="assets/img/teach-music-rtc.png" width="120"/>
-							</a>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<a href="//github.com/720kb/TeachMusicRTC"  target="_blank" class="link">
-										<h3>Teach Music RTC</h3>
-									</a>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										Teach and learn music with WebRTC and Pitch Detection
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini radius3 bg-light color-black center-content" href="//github.com/720kb/TeachMusicRTC" target="_blank">
-											&nbsp;<i class="fa fa-github-alt"></i> Source&nbsp;
-										</a>
-									</div>
-									<div class="col3">
-										<div class="line-compress">
-											<div class="line-compress">
-												<a class="btn btn-mini radius3 bg-light color-black center-content" href="http://teachrtc.mkvd.net:3000/" rel="nofollow" target="_blank">
-												Demo
-											</a>
-										</div>
-									</div>
-									</div>
-								</div>
-								<div class="separator15"></div>
-							</h5>
-						</div>
-						<div class="separator15"></div>
-						<div class="separator10"></div>
-						<div class="line radius3">
-							<a href="//github.com/720kb/oauthd-docker-container"  target="_blank" class="link">
-								<img class="col3 img-media bg-light radius3 toggle-opacity-inverse-hover" src="assets/img/docker.png" width="120"/>
-							</a>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<a href="//github.com/720kb/oauthd-docker-container"  target="_blank" class="link">
-										<h3>Docker oAuthd</h3>
-									</a>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										Docker oAuthd Container
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini radius3 bg-light color-black center-content" href="//github.com/720kb/oauthd-docker-container" target="_blank">
-											&nbsp;<i class="fa fa-github-alt"></i> Source&nbsp;
-										</a>
-									</div>
-								</div>
-								<div class="separator15"></div>
-							</h5>
-						</div>
-						<div class="separator15"></div>
-						<div class="separator10"></div>
-						<div class="line radius3">
-							<a href="//720kb.github.io/csshelper"  target="_blank" class="link">
-								<img class="col3 img-media bg-light radius3 toggle-opacity-inverse-hover" src="assets/img/css.png" width="120"/>
-							</a>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<a href="//720kb.github.io/csshelper"  target="_blank" class="link">
-										<h3>Csshelper</h3>
-									</a>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										A css helper - forget the traditional css frameworks approach
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini radius3 bg-light color-black center-content" href="//github.com/720kb/csshelper" target="_blank">
-											&nbsp;<i class="fa fa-github-alt"></i> Source&nbsp;
-										</a>
-									</div>
-								</div>
-								<div class="separator15"></div>
-							</h5>
-						</div>
-						<div class="separator15"></div>
-						<div class="line radius3">
-							<a href="//github.com/720kb/comunicator"  target="_blank" class="link">
-								<img class="col3 img-media bg-light radius3 toggle-opacity-inverse-hover" src="assets/img/node.png" width="120"/>
-							</a>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<a href="//github.com/720kb/comunicator"  target="_blank" class="link">
-										<h3>Comunicator</h3>
-									</a>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										The 720kb Comunicator API
-										(atm it uses websockets)
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini radius3 bg-light color-black center-content" href="//github.com/720kb/comunicator" target="_blank">
-											&nbsp;<i class="fa fa-github-alt"></i> Source&nbsp;
-										</a>
-									</div>
-								</div>
-								<div class="separator15"></div>
-							</h5>
-						</div>
-						<div class="separator15"></div>
-						<div class="line radius3">
-							<a href="//720kb.github.io/angular-fx"  target="_blank" class="link">
-								<img class="col3 img-media bg-light radius3 toggle-opacity-inverse-hover" src="assets/img/angular.png" width="120"/>
-							</a>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<a href="//720kb.github.io/angular-fx"  target="_blank" class="link">
-										<h3>Angular Fx</h3>
-									</a>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										AngularJS conditional animations and effects for your elements
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini radius3 bg-light color-black center-content" href="//github.com/720kb/angular-fx" target="_blank">
-											&nbsp;<i class="fa fa-github-alt"></i> Source&nbsp;
-										</a>
-									</div>
-								</div>
-								<div class="separator15"></div>
-							</h5>
-						</div>
-						<div class="separator15"></div>
-						<div class="line radius3">
-							<a href="//720kb.github.io/angular-background"  target="_blank" class="link">
-								<img class="col3 img-media bg-light radius3 toggle-opacity-inverse-hover" src="assets/img/angular.png" width="120"/>
-							</a>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<a href="//720kb.github.io/angular-background"  target="_blank" class="link">
-										<h3>Angular Background</h3>
-									</a>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										An angularjs directive to dynamically switch the background of your DOM elements
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini radius3 bg-light color-black center-content" href="//github.com/720kb/angular-background" target="_blank">
-											&nbsp;<i class="fa fa-github-alt"></i> Source&nbsp;
-										</a>
-									</div>
-								</div>
-								<div class="separator15"></div>
-							</h5>
-						</div>
-						<div class="separator15"></div>
-						<div class="line radius3">
-							<a href="//720kb.github.io/angular-socialshare"  target="_blank" class="link">
-								<img class="col3 img-media bg-light radius3 toggle-opacity-inverse-hover" src="assets/img/angular.png" width="120"/>
-							</a>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<a href="//720kb.github.io/angular-socialshare"  target="_blank" class="link">
-										<h3>Angular Socialshare</h3>
-									</a>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										An angularjs directive that helps you sharing urls and content on social platforms.
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini radius3 bg-light color-black center-content" href="//github.com/720kb/angular-socialshare" target="_blank">
-											&nbsp;<i class="fa fa-github-alt"></i> Source&nbsp;
-										</a>
-									</div>
-								</div>
-								<div class="separator15"></div>
-							</h5>
-						</div>
-						<div class="separator15"></div>
-						<div class="line radius3">
-							<a href="//720kb.github.io/angular-downloader"  target="_blank" class="link">
-								<img class="col3 img-media bg-light radius3 toggle-opacity-inverse-hover" src="assets/img/angular.png" width="120"/>
-							</a>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<a href="//720kb.github.io/angular-downloader"  target="_blank" class="link">
-										<h3>Angular Downloader</h3>
-									</a>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										An angularjs directive that enables you to manage browser download.
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini radius3 bg-light color-black center-content" href="//github.com/720kb/angular-downloader" target="_blank">
-											&nbsp;<i class="fa fa-github-alt"></i> Source&nbsp;
-										</a>
-									</div>
-								</div>
-								<div class="separator15"></div>
-							</h5>
-						</div>
-						<div class="separator15"></div>
-						<div class="line radius3">
-							<a href="//720kb.github.io/angular-tooltips"  target="_blank" class="link">
-								<img class="col3 img-media bg-light radius3 toggle-opacity-inverse-hover" src="assets/img/angular.png" width="120"/>
-							</a>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<a href="//720kb.github.io/angular-tooltips"  target="_blank" class="link">
-										<h3>Angular Tooltips</h3>
-									</a>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										An angularjs directive that generates a tooltip on your element
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini radius3 bg-light color-black center-content" href="//github.com/720kb/angular-tooltips" target="_blank">
-											&nbsp;<i class="fa fa-github-alt"></i> Source&nbsp;
-										</a>
-									</div>
-								</div>
-								<div class="separator15"></div>
-							</h5>
-						</div>
-						<div class="separator15"></div>
-						<div class="line radius3">
-							<a href="//720kb.github.io/angular-datepicker"  target="_blank" class="link">
-								<img class="col3 img-media bg-light radius3 toggle-opacity-inverse-hover" src="assets/img/angular.png" width="120"/>
-							</a>
-							<h5 class="col7 font-light">
-								<div class="col9 offset-left1">
-									<a href="//720kb.github.io/angular-datepicker" target="_blank" class="link">
-										<h3>Angular Datepicker</h3>
-									</a>
-									<div class="separator3"></div>
-									<div class="font-light color-muted">
-										An angularjs directive that generates a datepicker around your input
-									</div>
-									<div class="separator10"></div>
-									<div class="col4">
-										<a class="btn btn-mini radius3 bg-light color-black center-content" href="//github.com/720kb/angular-datepicker" target="_blank">
-											&nbsp;<i class="fa fa-github-alt"></i> Source&nbsp;
-										</a>
-									</div>
-								</div>
-								<div class="separator15"></div>
-							</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="separator100"></div>
+	<!--code-->
+	<div id="code" class="line article" ng-show="activeLink === 'code'">
+			<div class="article-title">
+			<h1 class="center-content font-xxx-large color-lightblue">Code</h1>
+			<h2 class="center-content font-x-medium color-muted">We think open source.</h2>
 			<div class="separator30"></div>
+			<div class="center-content">
+				<a href="//github.com/720kb" target="_blank" class="btn-badge btn-small btn-outline btn-block center-content color-lightblue">
+					<i class="fa fa-github-square"></i>
+					720kb on Github
+				</a>
+		</div>
 		</div>
 	</div>
-	<div class="separator50"></div>
-</div>
-<!--Contacts-->
-<div id="contacts" class="line bg-light">
-	<div class="line-max">
-		<div class="separator50"></div>
-		<div class="line">
-			<div class="col3 line-tablet">
-				<h2 class="font-x-large">Contact us</h2>
-			</div>
-			<div class="col7 line-tablet">
-				<div class="line">
-					<div class="separator30 mobile tablet"></div>
-					<div class="line radius3">
-						<div id="mail-button" class="line">
-							<!--mail button-->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="separator50"></div>
-	</div>
-</div>
 
-</div>
-<div class="line bg-light">
-	<div class="hr"></div>
-	<div class="line-max center-content color-muted">
-		<div class="separator30"></div>
-		Copyright &copy;
-		<a class="color-black" href="//720kb.net">720kb</a>
-		- 2015
-		<div class="separator30"></div>
+	<!--team-->
+	<div id="team" class="line article" ng-show="activeLink === 'team'">
+		<div class="article-title">
+			<h1 ngfx-fade-in="activeLink === 'team'" class="center-content font-xxx-large color-lightblue">Team</h1>
+			<h2 class="center-content font-x-medium color-muted">Crazy for the web</h2>
+		</div>
+		<div class="article-content bg-light">
+			<div class="separator100"></div>
+			<div class="line-max">
+          <div class="col3 center-content line-tablet line-mobile">
+            <div class="line">
+              <img ngfx-rubberband="activeLink === 'team'" ngfx-speed="slow" class="img-media radius-full" src="https://pbs.twimg.com/profile_images/588266549431111681/-OkrErlP.jpg" width="80">
+            </div>
+            <div class="separator10"></div>
+            <h5 class="color-muted">
+              Dario Andrei
+            </h5>
+            <div class="separator50 tablet mobile"></div>
+          </div>
+          <div class="col4 center-content line-tablet line-mobile">
+            <img  ngfx-rubberband="activeLink === 'team'" ngfx-speed="slow"  class="img-media radius-full" src="https://scontent-mxp.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/542160_4332260636080_2012164112_n.jpg?oh=0c5515650dddd69074fa88e4f398effd&amp;oe=55FF2328" width="80">
+            <div class="separator10"></div>
+            <h5 class="color-muted">
+              Filippo Oretti
+            </h5>
+            <div class="separator50 tablet mobile"></div>
+          </div>
+          <div class="col3 center-content line-tablet line-mobile">
+            <img  ngfx-rubberband="activeLink === 'team'" ngfx-speed="slow" class="img-media radius-full" src="https://pbs.twimg.com/profile_images/505182765457764352/2wAnUl4N.jpeg" width="80">
+            <div class="separator10"></div>
+            <h5 class="color-muted">
+            	Francesco Canessa
+            </h5>
+            <div class="separator50 tablet mobile"></div>
+          </div>
+        </div>
+			</div>
 	</div>
 </div>
-<div id="cookies">
+<div class="bg-lightblue color-white line fixed bottom layer2">
+<div class="bottom-menu">
+	<div class="line center-content font-light">
+		<div class="col3 col3x3">
+			<a href="#apps" ng-click="setActiveLink('apps')" ng-class="{'active': activeLink === 'apps'}" class="line color-white font-x-medium">
+				<div class="separator10"></div>
+					Apps
+				<div class="separator10"></div>
+			</a>
+		</div>
+		<div class="col3 col3x3">
+			<a href="#code" ng-click="setActiveLink('code')" ng-class="{'active': activeLink === 'code'}" class="line color-white font-x-medium">
+				<div class="separator10"></div>
+					Code
+				<div class="separator10"></div>
+			</a>
+		</div>
+		<div class="col3 col3x3">
+			<a href="javascript:void(0)" ng-click="setActiveLink('team')" ng-class="{'active': activeLink === 'team'}" class="line color-white font-x-medium">
+				<div class="separator10"></div>
+					Team
+				<div class="separator10"></div>
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!--<div id="cookies">
 	We use cookies for your better experience
 	<button type="button" id="720kb-cookie-button">OK</button>
-</div>
+</div>-->
 <script type="text/javascript" src="assets/js/720kb.cookies.js"></script>
-<script type="text/javascript" src="vendor/smooth-scroll/dist/js/bind-polyfill.min.js"></script>
-<script type="text/javascript" src="vendor/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-<script type="text/javascript">
-	<!--
-// Email obfuscator script 2.1 by Tim Williams, University of Arizona
-// Random encryption key feature by Andrew Moulden, Site Engineering Ltd
-// This code is freeware provided these four comment lines remain intact
-// A wizard to generate this code is at http://www.jottings.com/obfuscator/
-{ coded = 'PKRp@AMhr9.KLD'
-key = 'tn5LNloP7fISOYDKWvzapgARuq8yjJQbZdc60CTwx1k4392BGUheVEmirsHFMX'
-shift = coded.length
-link = '';
-
-for (i = 0; i < coded.length; i++) {
-
-	if (key.indexOf(coded.charAt(i))==-1) {
-
-		ltr = coded.charAt(i);
-		link += (ltr);
-	} else {
-
-		ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length;
-		link += (key.charAt(ltr));
-	}
-}
-document.getElementById('mail-button').innerHTML = '<a class="btn btn-medium color-black bg-white center-content radius3" href="mailto:' + link + '"><i class="fa fa-envelope-o color-lightblue"></i> Mail us </a>';
-}
-//-->
-smoothScroll.init({
-	'speed': 500,
-	'easing': 'easeInOutCubic',
-	'updateURL': true,
-	'offset': 0,
-	'callbackBefore': function (trigger) {
-
-		var el = document.getElementById('navbar')
-		, menu = document.getElementById('top-menu');
-
-		console.log(trigger);
-
-		Array.prototype.forEach.call(menu.querySelectorAll('a'), function (el) { el.className = el.className.replace(/ ?active ?/g, '');
-	});
-
-		trigger.classList.add('active');
-	}
-});
-</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
+<script src="bower/angular-fx/dist/angular-fx.min.js"></script>
+<script src="assets/js/index.js"></script>
 <!--G analytics-->
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
