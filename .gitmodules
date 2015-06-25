@@ -1,6 +1,0 @@
-[submodule "src/www/vendor/csshelper"]
-	path = src/www/vendor/csshelper
-	url = git://github.com/720kb/csshelper.git
-[submodule "src/www/vendor/smooth-scroll"]
-	path = src/www/vendor/smooth-scroll
-	url = git@github.com:cferdinandi/smooth-scroll.git
