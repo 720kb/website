@@ -72,10 +72,11 @@ h1, h2, h3, h4, h5, h6 {
   margin:0 auto;
   clear:both;
   display:inline-block;
+  transition: background-color 0.15s ease-out;
 }
 .media:hover{
-  transition: opacity 0.15s linear;
-  opacity:0.5;
+  transition: background-color 0.15s ease-out;
+  background:rgba(255,255,255,0.45);
 }
 .media-link{
   padding:15px 0;
