@@ -59,10 +59,18 @@ h1, h2, h3, h4, h5, h6 {
   opacity:1;
 }
 .media{
-  border-radius:2px;
-  padding:9px 15px;
-  width:auto;
-  display:block;
+  width:100%;
+  max-width:350px;
+  float:none;
+  margin:0 auto;
+  clear:both;
+  display:inline-block;
+}
+.media:hover{
+  opacity:0.5;
+}
+.media-link{
+  padding:15px 0;
 }
 .navbar-menu {
   max-width: 550px;
@@ -138,6 +146,9 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2px 2px 2px 2px;
 }
 /*Colors*/
+.color-muted-more{
+  color: rgba(0,0,0,0.3)
+}
 .color-light {
   color: #EFF5F7;
 }
@@ -178,6 +189,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-mini{
   padding:3px;
+}
+/*Utils*/
+.opacity-less{
+  opacity:0.23;
 }
 /*Tablet and mobile*/
 @media screen and (min-width:0px) and (max-width:800px) {

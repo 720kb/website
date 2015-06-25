@@ -86,29 +86,32 @@
 						Bitcoin
 					</a>
 			</div>
-		<div class="line-compress line-max">
+			<a href="//realtempo.com" class="opacity-toggle-hover" ngfx-fade-in-up="appsSliderType === 'music'" ngfx-default="true">
 				<div class="separator30"></div>
-			<div class="col8 offset-left1 line-mobile center-content">
-				<span class="bg-white radius3 media">
-					<div class="separator15"></div>
-					<img src="assets/img/realtempo.png" class="v-middle" width="120"/>
-					<div class="separator15"></div>
-				<div class="center-content color-muted">
-				 Experimental online and realtime
-				</div>
-				<div class="center-content color-muted">
-				 rehearsal rooms for musicians
-				</div>
+				<div class="col8 offset-left1 line-mobile center-content">
+					<div class="bg-white radius3 media left-content">
+						<div class="col3  center-content">
+							<div class="separator30"></div>
+							<img src="assets/img/mobile.png" width="38" ng-if="false"/>
+							<img src="assets/img/laptop.png" width="68"/>
+						</div>
+						<div class="col7">
+						<div class="separator30"></div>
+						<img src="assets/img/realtempo.png" class="v-middle" width="120"/>
+						<div class="separator15"></div>
+					<div class="col9 color-muted">
+					 Experimental online and realtime
+					 rehearsal rooms for musicians
+					</div>
+					</div>
 					<div class="separator10"></div>
-				</span>
-				<div class="separator15"></div>
-			<div class="center-content">
-				<a class="btn-badge btn-small btn-block center-content color-lightblue">
-				Try the &beta;eta
-				</a>
-			</div>
-			</div>
-		</div>
+					<small class="line-compress color-muted-more right-content font-x-small">
+						Click to try &nbsp;
+						</small>
+					<div class="separator10"></div>
+				</div>
+				</div>
+			</a>
 		</div>
 	</div>
 	<!--code-->
@@ -117,7 +120,7 @@
 			<h1 class="center-content font-xxx-large color-lightblue">Code</h1>
 			<h2 class="center-content font-x-medium color-muted">We think open source.</h2>
 			<div class="separator30"></div>
-			<div class="center-content" ngfx-fade-in="activeLink === 'code'" ngfx-default="show" ngfx-speed="slow">
+			<div class="center-content" ngfx-fade-in-up="activeLink === 'code'" ngfx-speed="slow" ngfx-default="show">
 				<a href="//github.com/720kb" class="btn-badge btn-small btn-outline btn-block center-content color-lightblue">
 					<i class="fa fa-github-square"></i>
 					720kb on Github
@@ -134,28 +137,28 @@
 		<div class="article-content bg-light">
 			<div class="separator100"></div>
 			<div class="line-max">
-          <div class="col3 center-content line-tablet line-mobile">
+          <div class="col3 center-content line-tablet line-mobile" ngfx-fade-in-up="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show">
             <div class="line">
-              <img ngfx-fade-in-up="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show" class="img-media radius-full" src="https://pbs.twimg.com/profile_images/588266549431111681/-OkrErlP.jpg" width="80">
+              <img class="img-media radius-full" src="https://pbs.twimg.com/profile_images/588266549431111681/-OkrErlP.jpg" width="80">
             </div>
             <div class="separator10"></div>
-            <h5 class="color-muted" ngfx-fade-in-up-big="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show">
+            <h5 class="color-muted">
               Dario Andrei
             </h5>
             <div class="separator50 tablet mobile"></div>
           </div>
-          <div class="col4 center-content line-tablet line-mobile">
-            <img ngfx-fade-in-up="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show"  class="img-media radius-full" src="https://scontent-mxp.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/542160_4332260636080_2012164112_n.jpg?oh=0c5515650dddd69074fa88e4f398effd&amp;oe=55FF2328" width="80">
+          <div class="col4 center-content line-tablet line-mobile" ngfx-fade-in-up="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show">
+            <img class="img-media radius-full" src="https://scontent-mxp.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/542160_4332260636080_2012164112_n.jpg?oh=0c5515650dddd69074fa88e4f398effd&amp;oe=55FF2328" width="80">
             <div class="separator10"></div>
-            <h5 class="color-muted" ngfx-fade-in-up-big="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show">
+            <h5 class="color-muted">
               Filippo Oretti
             </h5>
             <div class="separator50 tablet mobile"></div>
           </div>
-          <div class="col3 center-content line-tablet line-mobile">
-            <img ngfx-fade-in-up="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show" class="img-media radius-full" src="https://pbs.twimg.com/profile_images/505182765457764352/2wAnUl4N.jpeg" width="80">
+          <div class="col3 center-content line-tablet line-mobile" ngfx-fade-in-up="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show">
+            <img class="img-media radius-full" src="https://pbs.twimg.com/profile_images/505182765457764352/2wAnUl4N.jpeg" width="80">
             <div class="separator10"></div>
-            <h5 class="color-muted" ngfx-fade-in-up-big="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show">
+            <h5 class="color-muted">
             	Francesco Canessa
             </h5>
             <div class="separator50 tablet mobile"></div>
