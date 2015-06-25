@@ -1,12 +1,13 @@
 <!doctype html>
 <html ng-app="website">
 <head>
+	<base src="/"/>
 	<link rel="stylesheet" type="text/css" href="bower/csshelper/dist/helper.min.css">
 		<link rel="stylesheet" type="text/css" href="bower/animate.css/animate.min.css">
 		<link rel="stylesheet" type="text/css" href="bower/angular-fx/dist/angular-fx.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/720kb.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/720kb.cookies.css">
-	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
 	<meta name="description" content="720kb.net web and mobile apps with an eye to the Open Source." >
 	<meta name="robots" content="index, follow">
 	<meta property="og:url" content="http://720kb.net"/>
@@ -63,7 +64,7 @@
 	<div id="hello" class="line article" ng-show="activeLink === 'hello'">
 		<div class="article-title">
 		<h1 class="center-content font-xxx-large color-lightblue" ngfx-pulse="true">Hello</h1>
-		<h2 class="center-content font-x-medium color-muted">Nice to see you.</h2>
+		<h2 class="center-content font-x-medium color-muted" ngfx-fade-in="true" ngfx-default="show">Nice to see you.</h2>
 	</div>
 	</div>
 	<!--apps-->
@@ -79,7 +80,7 @@
 						Music
 					</a>
 					<a>
-						Com
+						Chatting
 					</a>
 					<a>
 						Bitcoin
@@ -116,19 +117,18 @@
 			<h1 class="center-content font-xxx-large color-lightblue">Code</h1>
 			<h2 class="center-content font-x-medium color-muted">We think open source.</h2>
 			<div class="separator30"></div>
-			<div class="center-content">
-				<a href="//github.com/720kb" target="_blank" class="btn-badge btn-small btn-outline btn-block center-content color-lightblue">
+			<div class="center-content" ngfx-fade-in="activeLink === 'code'" ngfx-default="show" ngfx-speed="slow">
+				<a href="//github.com/720kb" class="btn-badge btn-small btn-outline btn-block center-content color-lightblue">
 					<i class="fa fa-github-square"></i>
 					720kb on Github
 				</a>
 		</div>
 		</div>
 	</div>
-
 	<!--team-->
 	<div id="team" class="line article" ng-show="activeLink === 'team'">
 		<div class="article-title">
-			<h1 ngfx-fade-in="activeLink === 'team'" class="center-content font-xxx-large color-lightblue">Team</h1>
+			<h1 class="center-content font-xxx-large color-lightblue">Team</h1>
 			<h2 class="center-content font-x-medium color-muted">Crazy for the web</h2>
 		</div>
 		<div class="article-content bg-light">
@@ -136,26 +136,26 @@
 			<div class="line-max">
           <div class="col3 center-content line-tablet line-mobile">
             <div class="line">
-              <img ngfx-rubberband="activeLink === 'team'" ngfx-speed="slow" class="img-media radius-full" src="https://pbs.twimg.com/profile_images/588266549431111681/-OkrErlP.jpg" width="80">
+              <img ngfx-fade-in-up="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show" class="img-media radius-full" src="https://pbs.twimg.com/profile_images/588266549431111681/-OkrErlP.jpg" width="80">
             </div>
             <div class="separator10"></div>
-            <h5 class="color-muted">
+            <h5 class="color-muted" ngfx-fade-in-up-big="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show">
               Dario Andrei
             </h5>
             <div class="separator50 tablet mobile"></div>
           </div>
           <div class="col4 center-content line-tablet line-mobile">
-            <img  ngfx-rubberband="activeLink === 'team'" ngfx-speed="slow"  class="img-media radius-full" src="https://scontent-mxp.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/542160_4332260636080_2012164112_n.jpg?oh=0c5515650dddd69074fa88e4f398effd&amp;oe=55FF2328" width="80">
+            <img ngfx-fade-in-up="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show"  class="img-media radius-full" src="https://scontent-mxp.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/542160_4332260636080_2012164112_n.jpg?oh=0c5515650dddd69074fa88e4f398effd&amp;oe=55FF2328" width="80">
             <div class="separator10"></div>
-            <h5 class="color-muted">
+            <h5 class="color-muted" ngfx-fade-in-up-big="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show">
               Filippo Oretti
             </h5>
             <div class="separator50 tablet mobile"></div>
           </div>
           <div class="col3 center-content line-tablet line-mobile">
-            <img  ngfx-rubberband="activeLink === 'team'" ngfx-speed="slow" class="img-media radius-full" src="https://pbs.twimg.com/profile_images/505182765457764352/2wAnUl4N.jpeg" width="80">
+            <img ngfx-fade-in-up="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show" class="img-media radius-full" src="https://pbs.twimg.com/profile_images/505182765457764352/2wAnUl4N.jpeg" width="80">
             <div class="separator10"></div>
-            <h5 class="color-muted">
+            <h5 class="color-muted" ngfx-fade-in-up-big="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show">
             	Francesco Canessa
             </h5>
             <div class="separator50 tablet mobile"></div>
@@ -164,7 +164,7 @@
 			</div>
 	</div>
 </div>
-<div class="bg-lightblue color-white line fixed bottom layer2">
+<div class="bg-lightblue color-white line fixed bottom layer2" ngfx-fade-in-up="true" ngfx-default="show" ngfx-speed="slow">
 <div class="bottom-menu">
 	<div class="line center-content font-light">
 		<div class="col3 col3x3">
@@ -182,7 +182,7 @@
 			</a>
 		</div>
 		<div class="col3 col3x3">
-			<a href="javascript:void(0)" ng-click="setActiveLink('team')" ng-class="{'active': activeLink === 'team'}" class="line color-white font-x-medium">
+			<a href="#team" ng-href="#team" ng-click="setActiveLink('team')" ng-class="{'active': activeLink === 'team'}" class="line color-white font-x-medium">
 				<div class="separator10"></div>
 					Team
 				<div class="separator10"></div>
@@ -197,7 +197,8 @@
 	<button type="button" id="720kb-cookie-button">OK</button>
 </div>-->
 <script type="text/javascript" src="assets/js/720kb.cookies.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular-route.js"></script>
 <script src="bower/angular-fx/dist/angular-fx.min.js"></script>
 <script src="assets/js/index.js"></script>
 <!--G analytics-->
