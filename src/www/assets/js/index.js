@@ -19,10 +19,20 @@ angular.module('website', [
 
   var hash;
 
-  $scope.activeLink = 'hello';
+  $scope.appsSliderType = 'music';
 
+  if ($location.hash()) {
+
+    $scope.activeLink = $location.hash();
+  } else {
+
+    $scope.activeLink = 'hello';
+  }
   $scope.setActiveLink = function setActiveLink(link) {
     $scope.activeLink = link;
+  };
+  $scope.setAppsSliderType = function setAppsSliderType(type) {
+    $scope.appsSliderType = type;
   };
 }]);
 }(angular));

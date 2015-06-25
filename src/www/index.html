@@ -75,14 +75,14 @@
 		</div>
 		<div class="article-content bg-light">
 			<div class="separator50"></div>
-			<div class="article-menu center-content">
-					<a class="active radius20">
+			<div class="article-menu center-content"  ngfx-fade-in="activeLink === 'apps'" ngfx-default="show">
+					<a href="javascript:void(0)" ng-click="setAppsSliderType('music')" class="color-black" ng-class="{'active radius20': appsSliderType === 'music'}">
 						Music
 					</a>
-					<a>
+					<a href="javascript:void(0)" ng-click="setAppsSliderType('chatting')" class="color-black" ng-class="{'active radius20': appsSliderType === 'chatting'}">
 						Chatting
 					</a>
-					<a>
+					<a href="javascript:void(0)" ng-click="setAppsSliderType('bitcoin')" class="color-black" ng-class="{'active radius20': appsSliderType === 'bitcoin'}">
 						Bitcoin
 					</a>
 			</div>
