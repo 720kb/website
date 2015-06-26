@@ -8,7 +8,6 @@ html {
     min-height: 100%;
     height:100vh;
 }
-
 body {
     font-family:'Avenir Next', Arial;
     min-height: 100%;
@@ -35,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight:500;
 }
 .img-media{
-  box-shadow:  0px -2px 0 1.5px #1E9EFA,0px 2px 0 1.5px rgba(0,0,0,0.3);
+  box-shadow:  0 -2px 0 1.5px #1E9EFA,0 2px 0 1.5px rgba(0,0,0,0.3);
 }
 .article{
   height:100%;
@@ -92,10 +91,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size:15px;
   font-weight: 400;
   color:black;
+  opacity:0.55;
 }
 .navbar-menu a:hover, .navbar-menu a.active, .navbar-menu a:active, .navbar-menu a.active i {
-  color:#1E9EFA;
-  transition: color 0.15s ease;
+  opacity:1;
+  transition: opacity 0.15s ease;
 }
 .navbar-menu a i {
   font-size: 19px;
@@ -151,8 +151,18 @@ h1, h2, h3, h4, h5, h6 {
   border:1px solid #1E9EFA;
 }
 .btn-badge{
+  display:inline-block;
+  min-width:130px;
   padding:5px 10px;
   border-radius: 2px 2px 2px 2px;
+}
+.btn-badge:hover{
+  border-color:#8FCFFD;
+  transition: all 0.15s linear;
+}
+.btn-badge:active{
+  border-color: #1E9EFA;
+  opacity:0.45;
 }
 /*Colors*/
 .color-muted-more{
@@ -160,9 +170,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .color-light {
   color: #EFF5F7;
-}
-.color-grey {
-  color:smoke;
 }
 .color-lightblue {
   color: #1E9EFA;
