@@ -19,8 +19,8 @@
       link += (key.charAt(ltr))
     }
   }
-  mailIDs[1].innerHTML = '<a href="mailto:' + link + ';?subject=Generic" class="btn-badge btn-small btn-outline btn-block center-content color-lightblue"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Generic &nbsp;&nbsp;</a>';
-  mailIDs[2].innerHTML = '<a href="mailto:' + link + ';?subject=Business" class="btn-badge btn-small btn-outline btn-block center-content color-lightblue"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Business &nbsp;&nbsp;</a>';
+  mailIDs[1].innerHTML = '<a href="mailto:' + link + '?subject=Generic" class="btn-badge btn-small btn-outline btn-block center-content color-lightblue"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Generic &nbsp;&nbsp;</a>';
+  mailIDs[2].innerHTML = '<a href="mailto:' + link + '?subject=Business" class="btn-badge btn-small btn-outline btn-block center-content color-lightblue"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Business &nbsp;&nbsp;</a>';
   //tech
   {
   coded = '2cpi@w9k3R.Dc2'
@@ -37,7 +37,7 @@
       link += (key.charAt(ltr))
     }
   }
-mailIDs[0].innerHTML = '<a href="mailto:' + link +';?subject=Tech" class="btn-badge btn-small btn-outline btn-block center-content color-lightblue"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Technical &nbsp;</a>';
+mailIDs[0].innerHTML = '<a href="mailto:' + link +'?subject=Tech" class="btn-badge btn-small btn-outline btn-block center-content color-lightblue"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Technical &nbsp;</a>';
 }
 }
 //-->

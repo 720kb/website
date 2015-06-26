@@ -7,12 +7,16 @@ html {
     overflow: hidden;
     min-height: 100%;
     height:100vh;
+    background:white;
+    padding:0 0 0 0;
+    margin: 0 auto;
 }
 body {
     font-family:'Avenir Next', Arial;
     min-height: 100%;
     height:100vh;
     overflow: auto;
+    background:white;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
@@ -106,13 +110,18 @@ h1, h2, h3, h4, h5, h6 {
   float:none;
   margin:0 auto;
 }
-.bottom-menu a{
+.bottom-menu.ngfx-fadeinupbig-start a{
   font-size: 16px;
+  color:white;
+  opacity:1;
 }
 .bottom-menu a:hover,.bottom-menu a.active,.bottom-menu a:active{
   background:rgba(0,0,0,0.05);
   transition: all 0.15s ease;
   color:cyan;
+}
+.bottom-menu.ngfx-fadeinupbig-start #cookies{
+  opacity:1;
 }
 /*Layout*/
 .line-max {

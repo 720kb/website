@@ -14,8 +14,8 @@ angular.module('website', [
     'requireBase': false
   });
 }])
-.controller('Ctrl', ['$scope', '$location',
-  function Ctrl($scope, $location) {
+.controller('Ctrl', ['$scope', '$location', '$window',
+  function Ctrl($scope, $location, $window) {
 
   var hash;
 
