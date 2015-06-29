@@ -21,13 +21,14 @@ angular.module('website', [
 
   $scope.appsSliderType = 'music';
 
-  if ($location.hash()) {
+  if ($location.$$hash) {
 
-    $scope.activeLink = $location.hash();
+    $scope.activeLink = $location.$$hash;
   } else {
 
     $scope.activeLink = 'hello';
   }
+
   $scope.setActiveLink = function setActiveLink(link) {
     $scope.activeLink = link;
   };
