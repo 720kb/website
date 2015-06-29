@@ -12,7 +12,7 @@ angular.module('website', [
   $locationProvider.html5Mode({
     'enabled': true,
     'requireBase': false
-  });
+  }).hashPrefix('#');
 }])
 .controller('Ctrl', ['$scope', '$location', '$window',
   function Ctrl($scope, $location, $window) {
