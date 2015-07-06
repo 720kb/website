@@ -34,6 +34,9 @@
 						<div class="line right-content">
 							<div class="separator5"></div>
 							<div class="desktop tablet">
+								<a href="#awards" ng-click="setActiveLink('awards')" ng-class="{'active': activeLink === 'awards'}">
+									Awards
+								</a>
 								<a href="#contacts" ng-click="setActiveLink('contacts')" ng-class="{'active': activeLink === 'contacts'}">
 									Mail us
 								</a>
@@ -231,6 +234,41 @@
         </div>
 			</div>
 	</div>
+	<!--Awards-->
+	<div id="awards" class="line article" ng-show="activeLink === 'awards'">
+			<div class="article-title">
+			<h1 class="center-content font-xxx-large color-lightblue">Awards</h1>
+			<h2 class="center-content font-x-medium color-muted">Competitions and awards</h2>
+			<div class="separator50"></div>
+			<div class="center-content" ngfx-fade-in-up="activeLink === 'awards'" ngfx-speed="medium" ngfx-default="show">
+				<h2>2015</h2>
+				<div class="separator15"></div>
+				<a class="link" target="_blank" href="//tadhack.com/2015/tadhack-mini-london/">TADHACK mini London</a>
+				<div class="separator5"></div>
+				<div class="color-muted">
+					<i>Google Prize winners</i>
+					</div>
+					<div class="separator5"></div>
+					<h6>
+						Project - <a class="color-lightblue toggle-opacity-inverse-hover" target="_blank" href="//github.com/720kb/TeachMusicRTC">Teach Music RTC</a>
+					</h6>
+					<div class="separator10"></div>
+					<div class="separator10"></div>
+					<a class="link" target="_blank" href="//hackco.in">Hackcoin London</a>
+					<div class="separator5"></div>
+					<div class="color-muted">
+						<i>Winners</i>
+						</div>
+						<div class="separator5"></div>
+						<h6>
+							Project - <a class="color-lightblue toggle-opacity-inverse-hover" target="_blank" href="//github.com/makevoid/bitnfc_desktop">BitNFC Desktop</a>
+						</h6>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+	<!--contacts-->
 	<div id="contacts" class="line article" ng-show="activeLink === 'contacts'">
 			<div class="article-title">
 			<h1 class="center-content font-xxx-large color-lightblue">Email</h1>
@@ -248,6 +286,8 @@
 		</div>
 	</div>
 </div>
+
+<!--footer nav -->
 <div class="footer bg-lightblue color-white line fixed bottom layer2" ngfx-fade-in-up-big="true" ngfx-default="show" ngfx-speed="slow">
 <div class="bottom-menu">
 	<div class="line center-content font-light">
