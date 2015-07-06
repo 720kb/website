@@ -1,0 +1,9 @@
+{
+  "name": "720kb website",
+  "private": "true",
+  "devDependencies": {},
+  "dependencies": {
+    "angular-fx": "~1.0.0",
+    "csshelper": "~1.0.1"
+  }
+}
