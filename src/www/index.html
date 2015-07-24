@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="bower/angular-fx/dist/angular-fx.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/720kb.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/720kb.cookies.css">
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 	<title>720kb - web & mobile development</title>
 </head>
 <body class="bg-body" id="body" ng-controller="Ctrl">
@@ -45,10 +45,13 @@
 								</a>
 							</div>
 							<div class="mobile">
-								<a href="#contacts">
-									<i class="fa fa-paper-plane"></i>
+								<a href="#awards" ng-click="setActiveLink('awards')" ng-class="{'active': activeLink !== 'awards'}">
+									<i class="fa fa-bookmark-o"></i>
 								</a>
-								<a href="//blog.720kb.net" target="_blank">
+								<a href="#contacts" ng-click="setActiveLink('contacts')" ng-class="{'active': activeLink !== 'contacts'}">
+									<i class="fa fa-at"></i>
+								</a>
+								<a href="//blog.720kb.net" class="active" target="_blank">
 									<i class="fa fa-rss"></i>
 								</a>
 							</div>
