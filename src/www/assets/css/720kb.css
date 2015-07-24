@@ -53,7 +53,6 @@ h1, h2, h3, h4, h5, h6 {
 .article-content{
   height:80vh;
   min-height:80%;
-  padding-bottom:0;
 }
 .article-menu a{
   padding:0.5px 8px 0.5px 9px;
@@ -69,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity:1;
 }
 .media{
-  width:95%;
+  width:92%;
   max-width:350px;
   float:none;
   margin:0 auto;
