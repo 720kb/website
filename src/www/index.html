@@ -16,325 +16,279 @@
 	<link rel="stylesheet" type="text/css" href="bower/animate.css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="bower/angular-fx/dist/angular-fx.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/720kb.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/720kb.cookies.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 	<title>720kb</title>
 </head>
-<body class="bg-body" id="body" ng-controller="Ctrl">
-	<div class="line-compress fixed layer1 top navbar">
-		<div class="navbar-menu">
-			<div class="separator15"></div>
+<body class="bg-body" id="body" ng-controller="HomeController as ctrl">
+	<div class="line-compress center-content nav-mobile fixed top layer2 hide" ngfx-default="hide" ng-class="{'hide': !ctrl.mobileMenu}" ngfx-fade-in="ctrl.mobileMenu">
+		<a href="/">Hello</a>
+		<a href="#whoweare">Who we are</a>
+		<a href="#support">Support</a>
+		<a target="blank" href="http://twitter.com/720kb_">News</a>
+		<a href="#contacts">Contacts</a>
+	</div>
+	<div class="home">
+		<div class="separator30 desktop"></div>
+		<div class="separator15 tablet mobile"></div>
+		<div class="line-compress line-max">
 			<div class="line">
+				<div class="col4">
+					<h1 class="logo color-white font-bold">720kb</h1>
+				</div>
+				<div class="col6 nav right-content">
+					<span class="desktop">
+						<a href="/">Hello</a>
+						<a href="#whoweare">Who we are</a>
+						<a href="#support">Support</a>
+						<a target="blank" href="http://twitter.com/720kb_">News</a>
+						<a href="#contacts">Contacts</a>
+					</span>
+					<span class="nav-mobile-button fixed top right layer3 tablet mobile">
+						<a href="javascript:void(0)" ng-click="ctrl.toggleMobileMenu()">
+							<i class="fa fa-bars fa-2x"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+			<div class="separator50"></div>
+		</div>
+		<div class="line-compress line-max bg-home">
+			<div class="slogan">
+				<div class="separator100"></div>
+				<h1 class="color-white">HELLO</h1>
+				<h3 class="color-white">We are on a mission.</h3>
+			</div>
+			<div class="line line-max slider">
 				<div class="col2">
-					<a href="#hello" ng-click="setActiveLink('hello')" class="logo color-lightblue">
-						<div class="separator5"></div>
-					 	720kb
+					<a target="_blank" href="http://slize.co" rel="index,follow" title="Slize, The seven seconds random videochat.">
+						<img src="assets/img/slize.png"/>
 					</a>
 				</div>
-				<div class="col8 nav" id="top-menu">
-					<div class="line-compress">
-						<div class="line right-content">
-							<div class="separator5"></div>
-							<div class="desktop tablet">
-								<a href="#awards" ng-click="setActiveLink('awards')" ng-class="{'active': activeLink === 'awards'}">
-									Awards
-								</a>
-								<a href="#contacts" ng-click="setActiveLink('contacts')" ng-class="{'active': activeLink === 'contacts'}">
-									Mail us
-								</a>
-								<a href="http://twitter.com/720kb_" target="_blank">
-									News
-								</a>
-							</div>
-							<div class="mobile">
-								<a href="#awards" ng-click="setActiveLink('awards')" ng-class="{'active': activeLink !== 'awards'}">
-									<i class="fa fa-bookmark-o"></i>
-								</a>
-								<a href="#contacts" ng-click="setActiveLink('contacts')" ng-class="{'active': activeLink !== 'contacts'}">
-									<i class="fa fa-at"></i>
-								</a>
-								<a href="http://twitter.com/720kb_" class="active" target="_blank">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="separator15"></div>
-		</div>
-	</div>
-	<div id="hello" class="line article" ng-show="activeLink === 'hello'">
-		<div class="article-title">
-		<h1 class="center-content font-xxx-large color-lightblue" ngfx-pulse="true">Hello</h1>
-		<h2 class="center-content font-x-medium color-muted" ngfx-fade-in="true" ngfx-default="show">Nice to see you.</h2>
-	</div>
-	<div>
-		<div class="separator100"></div>
-			<div id="cookies" class="line center-content font-x-small bg-white color-muted">
-				<div class="separator10"></div>
-				We use cookies for your better experience
-				<button class="toggle-opacity-hover" type="button" id="720kb-cookie-button">OK</button>
-				<div class="separator10"></div>
-		</div>
-		<div class="center-content font-x-small color-muted-more">
-		 Copyright © 2015 - <a class="font-x-small color-muted-more" href="http://720kb.net">720kb</a>
-		</div>
-	</div>
-	</div>
-	<!--apps-->
-	<div id="apps" class="line article" ng-show="activeLink === 'apps'">
-		<div class="article-title">
-			<h1 class="center-content font-xxx-large color-lightblue">Apps</h1>
-			<h2 class="center-content font-x-medium color-muted">We bring apps to life.</h2>
-		</div>
-		<div class="article-content bg-light">
-			<div class="separator50"></div>
-			<div class="article-menu center-content"  ngfx-fade-in="activeLink === 'apps'" ngfx-default="show">
-					<a href="javascript:void(0)" ng-click="setAppsSliderType('music')" class="color-black" ng-class="{'active radius20': appsSliderType === 'music'}">
-						Music
-					</a>
-					<a href="javascript:void(0)" ng-click="setAppsSliderType('chatting')" class="color-black" ng-class="{'active radius20': appsSliderType === 'chatting'}">
-						Chatting
-					</a>
-					<a href="javascript:void(0)" ng-click="setAppsSliderType('bitcoin')" class="color-black" ng-class="{'active radius20': appsSliderType === 'bitcoin'}">
-						Bitcoin
-					</a>
-			</div>
-			<!--Music-->
-			<!--realtempo-->
-			<a href="http://realtempo.com" target="_blank" class="opacity-toggle-hover" ngfx-fade-in-up="appsSliderType === 'music'" ng-hide="appsSliderType !== 'music'">
-				<div class="separator30"></div>
-				<div class="col8 offset-left1 line-mobile center-content">
-					<div class="bg-white radius3 media left-content">
-						<div class="col3 center-content">
-						<div class="separator15"></div>
-						<div class="separator5"></div>
-							<img src="assets/img/mobile.png" width="38" ng-if="false"/>
-							<img src="assets/img/laptop.png" width="68"/>
-						</div>
-						<div class="col7">
-						<div class="separator15"></div>
-						<div class="separator5"></div>
-						<img src="assets/img/realtempo.png" class="v-middle" width="120"/>
-						<div class="separator15"></div>
-					<div class="col9 color-muted">
-					 Experimental online and realtime
-					 rehearsal rooms for musicians
-					</div>
-					</div>
-					<small class="line-compress color-muted-more left-content font-x-small">
-						&nbsp;&nbsp;&nbsp;Click to try it
-						</small>
-					<div class="separator10"></div>
-				</div>
-				</div>
-			</a>
-			<!--Chatting-->
-			<!--fuffa-->
-			<a href="http://getfuffa.com" target="_blank" class="opacity-toggle-hover" ngfx-fade-in-up="appsSliderType === 'chatting'" ng-hide="appsSliderType !== 'chatting'">
-				<div class="separator30"></div>
-				<div class="col8 offset-left1 line-mobile center-content">
-					<div class="bg-white radius3 media left-content">
-						<div class="col3 center-content">
-						<div class="separator15"></div>
-						<div class="separator5"></div>
-							<img src="assets/img/mobile.png" width="38"/>
-						</div>
-						<div class="col7">
-						<div class="separator15"></div>
-						<div class="separator5"></div>
-						<img src="assets/img/fuffa.png" class="v-middle" width="120"/>
-						<div class="separator15"></div>
-					<div class="col9 color-muted">
-					 Chat and keep in touch simply through emotions.
-					</div>
-					</div>
-					<small class="line-compress color-muted-more left-content font-x-small">
-						&nbsp;&nbsp;&nbsp;Click to try it
-						</small>
-					<div class="separator10"></div>
-				</div>
-				</div>
-			</a>
-			<!--Bitcoin-->
-			<!--BitNFC-->
-			<a href="http://bitnfc.org" target="_blank" class="opacity-toggle-hover" ngfx-fade-in-up="appsSliderType === 'bitcoin'" ng-hide="appsSliderType !== 'bitcoin'">
-				<div class="separator30"></div>
-				<div class="col8 offset-left1 line-mobile center-content">
-					<div class="bg-white radius3 media left-content">
-						<div class="col3 center-content">
-						<div class="separator15"></div>
-						<div class="separator5"></div>
-							<img src="assets/img/mobile.png" width="38"/>
-						</div>
-						<div class="col7">
-						<div class="separator15"></div>
-						<div class="separator5"></div>
-						<img src="assets/img/bitnfc.png" class="v-middle" width="120"/>
-						<div class="separator15"></div>
-					<div class="col9 color-muted">
-					 Bitcoin NFC enabled Mobile Wallet.
-					</div>
-					</div>
-					<small class="line-compress color-muted-more left-content font-x-small">
-						&nbsp;&nbsp;&nbsp;Click to try it
-						</small>
-					<div class="separator10"></div>
-				</div>
-				</div>
-			</a>
-		</div>
-	</div>
-	<!--code-->
-	<div id="code" class="line article" ng-show="activeLink === 'code'">
-			<div class="article-title">
-			<h1 class="center-content font-xxx-large color-lightblue">Code</h1>
-			<h2 class="center-content font-x-medium color-muted">We think open source.</h2>
-			<div class="separator30"></div>
-			<div class="center-content" ngfx-fade-in-up="activeLink === 'code'" ngfx-speed="medium" ngfx-default="show">
-				<a href="http://github.com/720kb" target="_blank" class="btn-badge btn-small btn-outline btn-block center-content color-lightblue">
-					<i class="fa fa-github-alt"></i>
-					720kb on Github
+				<div class="col2">
+					<a target="_blank" href="http://realtempo.com" rel="index,follow" title="Realtempo, experimental online rehearsal rooms for musicians.">
+					<img src="assets/img/realtempo.png"/>
 				</a>
-		</div>
+				</div>
+				<div class="col2">
+					<a target="_blank" href="http://getfuffa.com" rel="index,follow" title="Fuffa, keep in touch using your feelings.">
+						<img src="assets/img/fuffa.png"/>
+					</a>
+				</div>
+				<div class="col2">
+					<a target="_blank" href="http://bitnfc.org" rel="index,follow" title="Bitnfc, the Bitcoin mobile NFC enabled wallet.">
+						<img src="assets/img/bitnfc.png"/>
+					</a>
+				</div>
+				<div class="col2">
+					<a target="_blank" href="http://twitter.com/720kb_" rel="index,follow" title="Follow us on Twitter">
+						<img src="assets/img/twitter-follow.png"/>
+					</a>
+				</div>
+			</div>
+			<video video-home autoplay muted>
+				<source src="galaxy3.mp4" type="video/mp4" />
+			</video>
 		</div>
 	</div>
-	<!--team-->
-	<div id="team" class="line article" ng-show="activeLink === 'team'">
-		<div class="article-title">
-			<h1 class="center-content font-xxx-large color-lightblue">Team</h1>
-			<h2 class="center-content font-x-medium color-muted">Crazy for the web</h2>
-		</div>
-		<div class="article-content bg-light">
+	<div class="section line-compress bg-white">
+		<div class="line-compress line-max" id="whoweare">
 			<div class="separator100"></div>
-			<div class="line line-max line-tablet line-mobile bg-light">
-          <div class="col3 bg-light center-content line-tablet line-mobile" ngfx-fade-in-up="activeLink === 'team'" ngfx-speed="fast" ngfx-default="show">
-            <div class="line">
-              <img class="img-media radius-full" src="https://pbs.twimg.com/profile_images/588266549431111681/-OkrErlP.jpg" width="80">
-            </div>
-            <div class="separator10"></div>
-            <h5 class="color-muted">
-              Dario Andrei
-            </h5>
-            <div class="separator30 tablet mobile"></div>
-          </div>
-          <div class="col4 bg-light  center-content line-tablet line-mobile" ngfx-fade-in-up="activeLink === 'team'" ngfx-speed="medium" ngfx-default="show">
-            <img class="img-media radius-full" src="https://pbs.twimg.com/profile_images/614075548491509760/qf7bdfzr_400x400.jpg" width="80">
-            <div class="separator10"></div>
-            <h5 class="color-muted">
-              Filippo Oretti
-            </h5>
-            <div class="separator30 tablet mobile"></div>
-          </div>
-          <div class="col3 bg-light center-content line-tablet line-mobile" ngfx-fade-in-up="activeLink === 'team'" ngfx-speed="slow" ngfx-default="show">
-            <img class="img-media radius-full" src="https://pbs.twimg.com/profile_images/505182765457764352/2wAnUl4N.jpeg" width="80">
-            <div class="separator10"></div>
-            <h5 class="color-muted">
-            	Francesco Canessa
-            </h5>
-          </div>
-					<div class="separator100 tablet mobile"></div>
-        </div>
-			</div>
-	</div>
-	<!--Awards-->
-	<div id="awards" class="line article" ng-show="activeLink === 'awards'">
-			<div class="article-title">
-			<h1 class="center-content font-xxx-large color-lightblue">Awards</h1>
-			<h2 class="center-content font-x-medium color-muted">Competitions and awards</h2>
-			<div class="separator50"></div>
-			<div class="center-content" ngfx-fade-in-up="activeLink === 'awards'" ngfx-speed="medium" ngfx-default="show">
-				<h2>2015</h2>
+			<div class="col6">
+				<h1 class="font-medium">We are on a mission</h1>
+				<div class="separator30"></div>
+				<h2>
+					<b class="font-medium">720kb</b> is to remind how, in the past, despite the less accessible technologies, people and ideas managed to revolutionize the world and life.
+				</h2>
 				<div class="separator15"></div>
-				<a class="link" target="_blank" href="http://tadhack.com/2015/tadhack-mini-london/">TADHACK mini London</a>
-				<div class="separator5"></div>
-				<div class="color-muted">
-					<i>Google Prize winners</i>
-					</div>
+				<h2>
+					We are your solution for private and public oriented products.
+					<div></div>
+					Reach us if you want your idea to come truth.
+				</h2>
+				<div class="separator50"></div>
+				<div class="col2">
+					<p class="font-medium">
+						<a rel="noindex" target="_blank" href="https://www.linkedin.com/in/darioandrei">
+							<span class="color-black toggle-opacity-inverse-hover">Dario Andrei</span>
+						</a>
+					</p>
 					<div class="separator5"></div>
-					<h6>
-						Project - <a class="color-lightblue toggle-opacity-inverse-hover" target="_blank" href="http://github.com/720kb/TeachMusicRTC">Teach Music RTC</a>
-					</h6>
-					<div class="separator10"></div>
-					<div class="separator10"></div>
-					<a class="link" target="_blank" href="http://hackco.in">Hackcoin London</a>
+					<small class="color-muted">Co-founder</small>
+				</div>
+				<div class="col2">
+					<p class="font-medium">
+					<a rel="noindex" target="_blank" href="https://www.linkedin.com/in/filippooretti">
+						<span class="color-black toggle-opacity-inverse-hover">Filippo Oretti</span>
+					</a>
+					</p>
 					<div class="separator5"></div>
-					<div class="color-muted">
-						<i>Winners</i>
-						</div>
-						<div class="separator5"></div>
-						<h6>
-							Project - <a class="color-lightblue toggle-opacity-inverse-hover" target="_blank" href="http://github.com/makevoid/bitnfc_desktop">BitNFC Desktop</a>
-						</h6>
+					<small class="color-muted">Co-founder</small>
+				</div>
+				<div class="col3">
+					<p class="font-medium">
+						<a rel="noindex" target="_blank" href="https://www.linkedin.com/in/makevoid">
+						<span class="color-black toggle-opacity-inverse-hover">Francesco Canessa</span>
+					</a>
+				</p>
+					<div class="separator5"></div>
+					<small class="color-muted">Bitcoin Apps Developer</small>
+				</div>
+				<div class="col3">
+					<p class="font-medium">
+						<a rel="noindex" target="_blank" href="https://www.linkedin.com/in/luca-bressanelli-86768529">
+						<span class="color-black toggle-opacity-inverse-hover">	Luca Bressanelli</span>
+						</a>
+						</p>
+					<div class="separator5"></div>
+					<small class="color-muted">Advisor, Java & MS Expert</small>
+				</div>
+				<div class="separator30"></div>
 			</div>
 		</div>
-		</div>
-	</div>
-</div>
-	<!--contacts-->
-	<div id="contacts" class="line article" ng-show="activeLink === 'contacts'">
-			<div class="article-title">
-			<h1 class="center-content font-xxx-large color-lightblue">Email</h1>
-			<h2 class="center-content font-x-medium color-muted">Let's talk about it.</h2>
-			<div class="separator30"></div>
-			<div class="center-content" ngfx-fade-in-up="activeLink === 'contacts'" ngfx-speed="medium" ngfx-default="show">
-				<div id="info-mail"></div>
-				<div class="separator5"></div>
-				<div class="separator3"></div>
-				<div id="business-mail"></div>
-				<div class="separator5"></div>
-				<div class="separator3"></div>
-				<div id="tech-mail"></div>
-		</div>
-		</div>
-	</div>
-</div>
-
-<!--footer nav -->
-<div class="footer bg-lightblue color-white line fixed bottom layer2" ngfx-fade-in-up-big="true" ngfx-default="show" ngfx-speed="slow">
-<div class="bottom-menu">
-	<div class="line center-content font-light">
-		<div class="col3 col3x3">
-			<a href="#apps" ng-click="setActiveLink('apps')" ng-class="{'active': activeLink === 'apps'}" class="line color-white font-x-medium">
+		<div class="col3 offset-left1 radius5">
+			<div class="separator15"></div>
+			<div id="particles">
+				<div class="center-content color-black toggle-opacity-inverse-hover">
+					<a class="color-black toggle-opacity-inverse-hover" target="_blank" href="https://dribbble.com/720kb">
+						The Design yard
+					</a>
+				</div>
+			</div>
+			<h3 class="font-medium">Google Prize winners<h3>
 				<div class="separator10"></div>
-					Apps
+				<a>TADHACK mini London</a>
 				<div class="separator10"></div>
-			</a>
-		</div>
-		<div class="col3 col3x3">
-			<a href="#code" ng-click="setActiveLink('code')" ng-class="{'active': activeLink === 'code'}" class="line color-white font-x-medium">
-				<div class="separator10"></div>
-					Code
-				<div class="separator10"></div>
-			</a>
-		</div>
-		<div class="col3 col3x3">
-			<a href="#team" ng-href="#team" ng-click="setActiveLink('team')" ng-class="{'active': activeLink === 'team'}" class="line color-white font-x-medium">
-				<div class="separator10"></div>
-					Team
-				<div class="separator10"></div>
-			</a>
-		</div>
-	</div>
-</div>
-</div>
-</div>
-<script type="text/javascript" src="assets/js/720kb.cookies.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular-route.js"></script>
-<script src="bower/angular-fx/dist/angular-fx.min.js"></script>
-<script src="assets/js/index.js"></script>
-<!--Mail us-->
-<script src="assets/js/mail.js" type="text/javascript"></script>
-<!--G analytics-->
-<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-54873387-1', 'auto');
-	ga('send', 'pageview');
-</script>
-</body>
-</html>
+				Project <a href="">Teach Music RTC</a>
+				<div class="separator15"></div>
+				<h3 class="font-medium">Hackcoin London winners<h3>
+					<div class="separator10"></div>
+					<a>Hackcoin London</a>
+					<div class="separator10"></div>
+					Project <a href="">Bitnfc Desktop</a>
+				</div>
+				<div class="separator100"></div>
+			</div>
+			<div class="section line bg-grey color-white">
+				<div class="line-compress line-max">
+					<div class="separator15"></div>
+					<div class="line">
+						<div class="col5">
+						<div class="col2 color-muted line-tablet">
+							<div class="separator15"></div>
+								<div class="separator5"></div>
+							<a target="_blank" href="http://github.com/720kb" alt="720kb on github" title="720kb github projects">
+								<img class="toggle-opacity-hover " src="/assets/img/github.png" width="110" alt="720kb on github" title="720kb github projects"/>
+							</a>
+						</div>
+						<div class="col6 color-muted left-content desktop">
+							<div class="separator30"></div>
+							<div class="separator5"></div>
+							<h3>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								We think open source
+							</h3>
+						</div>
+						</div>
+						<div class="col5 right-content">
+						<div class="line color-muted left-content-tablet right-content">
+							<div class="separator30"></div>
+								<div class="separator5"></div>
+							<a class="color-muted" target="_blank" href="http://github.com/720kb" alt="720kb on github" title="720kb github projects">
+								<h3 class="toggle-opacity-inverse-hover line right-content">
+									<span class="desktop">
+										See all the projects
+										&nbsp;<i class="fa fa-chevron-right v-middle"></i>
+									</span>
+									<span class="tablet mobile">
+										Open projects
+									&nbsp;<i class="fa fa-chevron-right v-middle"></i>
+								</span>
+								</h3>
+							</a>
+						</div>
+						</div>
+					</div>
+					<div class="separator30"></div>
+				</div>
+			</div>
+			<div class="section line-compress bg-blue color-white contacts">
+				<div class="line-compress line-max" id="contacts">
+					<div class="separator100"></div>
+					<h1 class="font-medium">Contact us</h1>
+					<div class="separator15"></div>
+					<div class="col6 line-tablet">
+						<h2 class="font-medium">
+							Contact us if you have any question or if you need support.
+						</h2>
+						<div class="separator10"></div>
+						<h2 class="color-muted-inverse-less">
+							Depending on your timezone and on the email volumes, we'll be in touch with you as quick as we can.
+						</h2>
+					</div>
+					<div class="separator50"></div>
+					<div class="separator15"></div>
+					<div class="col3 line-tablet">
+						<button class="btn btn-medium color-white radius3">
+							<div class="separator5"></div>
+							Generic
+							<div class="separator5"></div>
+						</button>
+					</div>
+					<div class="col4 line-tablet">
+						<button class="btn btn-medium color-white radius3">
+							<div class="separator5"></div>
+							Technical support
+							<div class="separator5"></div>
+						</button>
+					</div>
+					<div class="col3 line-tablet">
+						<button class="btn btn-medium color-white radius3">
+							<div class="separator5"></div>
+							Business and customers
+							<div class="separator5"></div>
+						</button>
+					</div>
+				</div>
+				<div class="separator100"></div>
+			</div>
+			<div class="line footer">
+				<div class="separator15"></div>
+				<footer class="line-compress line-max center-content-mobile">
+				<small>
+						Copyright	© <a class="toggle-opacity-inverse-hover" target="_self" href="/">720kb</a> &nbsp; 2016, All rights reserved
+					</small>
+				</footer>
+				<div class="separator15"></div>
+			</div>
+			<!--<div id="cookies" class="line center-content font-x-small bg-white color-muted">
+			<div class="separator10"></div>
+			We use cookies for your better experience
+			<button class="toggle-opacity-hover" type="button" id="720kb-cookie-button">OK</button>
+			<div class="separator10"></div>
+		</div>-->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+		<script type="text/javascript">
+		(function particlesBoot() {
+			particlesJS.load('particles', 'assets/particles.json', function() {
+  			console.log('callback - particles.js config loaded');
+			});
+		}());
+		</script>
+		<!--<script type="text/javascript" src="assets/js/720kb.cookies.js"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+		<script src="bower/angular-fx/dist/angular-fx.min.js"></script>
+		<script src="assets/js/index.js"></script>
+		<!--G analytics-->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-54873387-1', 'auto');
+		ga('send', 'pageview');
+		</script>
+	</body>
+	</html>

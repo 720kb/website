@@ -1,0 +1,20 @@
+/*tablet*/
+@media screen and (max-width:800px) {
+  .nav a{
+    padding:0;
+  }
+  .line-max{
+    max-width: 93%;
+  }
+  .contacts .btn{
+    max-width: 100%;
+    line-height: 40px;
+    margin: 10px 0;
+  }
+  .center-content-tablet{
+    text-align: center;
+  }
+  .left-content-tablet{
+    text-align: left;
+  }
+}
