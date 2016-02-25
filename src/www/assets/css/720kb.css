@@ -190,14 +190,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
   min-height:3px;
 }
 #particles{
-
+  max-height: 150px;
   min-height:100px;
 }
-#particles div{
-  margin-top:-50px;
+#particles canvas{
+  margin-top:-90px;
 }
 #particles div a{
   font-size: 20px;
   position: relative;
-  bottom:-50px;
 }
