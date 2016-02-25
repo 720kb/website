@@ -3,4 +3,4 @@
 
 Official website
 
-© (720kb)[http://720kb.net]
+© [720kb](http://720kb.net)
