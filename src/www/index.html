@@ -25,25 +25,29 @@
 	<div class="line-compress center-content nav-mobile fixed top layer2 hide" ngfx-default="hide" ng-class="{'hide': !ctrl.mobileMenu}" ngfx-fade-in="ctrl.mobileMenu">
 		<a href="/">Hello</a>
 		<a href="#whoweare">Who we are</a>
-		<a href="#support">Support</a>
+		<a href="#contacts">Support</a>
 		<a target="blank" href="http://twitter.com/720kb_">News</a>
-		<a href="#contacts">Contacts</a>
+		<a href="#contacts">Contact us</a>
 	</div>
 	<div class="home">
 		<div class="separator30 desktop"></div>
 		<div class="separator15 tablet mobile"></div>
-		<div class="line-compress line-max">
-			<div class="line">
+		<div class="line navbar">
+			<div class="line-compress line-max">
 				<div class="col4">
-					<h1 class="logo color-white font-bold">720kb</h1>
+					<a href="" class="logo">
+						<h1 class="font-bold">720kb</h1>
+					</a>
 				</div>
 				<div class="col6 nav right-content">
 					<span class="desktop">
+						<div class="separator5"></div>
+							<div class="separator3"></div>
 						<a href="/">Hello</a>
-						<a href="#whoweare">Who we are</a>
-						<a href="#support">Support</a>
+						<a href="#whowear" data-scroll>Who we are</a>
+						<a href="#contacts">Support</a>
 						<a target="blank" href="http://twitter.com/720kb_">News</a>
-						<a href="#contacts">Contacts</a>
+						<a href="#contacts">Contact us</a>
 					</span>
 					<span class="nav-mobile-button fixed top right layer3 tablet mobile">
 						<a href="javascript:void(0)" ng-click="ctrl.toggleMobileMenu()">
@@ -88,7 +92,7 @@
 				</div>
 			</div>
 			<video video-home autoplay muted>
-				<source src="galaxy3.mp4" type="video/mp4" />
+				<source src="galaxy.mp4" type="video/mp4" />
 			</video>
 		</div>
 	</div>
@@ -269,19 +273,17 @@
 			<button class="toggle-opacity-hover" type="button" id="720kb-cookie-button">OK</button>
 			<div class="separator10"></div>
 		</div>-->
+		<!--<script type="text/javascript" src="assets/js/720kb.cookies.js"></script>-->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+		<script type="text/javascript" src="bower/angular-fx/dist/angular-fx.min.js"></script>
+		<script type="text/javascript" src="assets/js/index.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 		<script type="text/javascript">
 		(function particlesBoot() {
-			particlesJS.load('particles', 'assets/particles.json', function() {
-  			console.log('callback - particles.js config loaded');
-			});
+			particlesJS.load('particles', 'assets/particles.json');
 		}());
 		</script>
-		<!--<script type="text/javascript" src="assets/js/720kb.cookies.js"></script>-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
-		<script src="bower/angular-fx/dist/angular-fx.min.js"></script>
-		<script src="assets/js/index.js"></script>
 		<!--G analytics-->
 		<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

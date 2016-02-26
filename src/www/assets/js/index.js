@@ -31,6 +31,25 @@ var ConfigFunction = function ($locationProvider) {
   that.setActiveLink =  setActiveLink;
   that.toggleMobileMenu = toggleMobileMenu;
 }
+, NavbarDirective = function navbarDirective($window) {
+  return {
+    'restrict': 'C',
+    'scope': true,
+    'link': function navbarDirective(scope, element, attrs) {
+
+      var theWindow = angular.element($window);
+
+      theWindow.bind('scroll', function onWindowScrollNavbar() {
+        if (theWindow[0].scrollY > 100) {
+
+          element.addClass('scrolling');
+        } else {
+          element.removeClass('scrolling');
+        }
+      });
+    }
+  }
+}
 , VideoDirective = function videoDirective() {
 
   return {
@@ -47,5 +66,6 @@ angular.module('website', [
 ])
 .config(['$locationProvider', ConfigFunction])
 .controller('HomeController', ['$scope', '$location', '$window', HomeController])
+.directive('navbar', ['$window', NavbarDirective])
 .directive('videoHome',[VideoDirective]);
 }(angular));
