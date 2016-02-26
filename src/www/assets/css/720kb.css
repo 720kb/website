@@ -48,6 +48,7 @@ small{
   font-size: 14px;
 }
 .home{
+  padding-top:80px;
   min-height:100%;
   height:100vh;
 }
@@ -60,7 +61,7 @@ small{
   vertical-align: middle;
 }
 .navbar{
-  transition: all .5s ease-in-out;
+  transition: all .35s ease-in-out;
   width:100%;
   left:0;
   right:0;
@@ -78,6 +79,14 @@ small{
   color:black;
   line-height: 45px;
   opacity:.6;
+  color:rgba(0,0,0, .8);
+}
+.navbar.scrolling a:hover{
+  background: #f4f6f6;
+  opacity:.86;
+}
+.navbar.scrolling .nav-mobile-button a:hover{
+  background: none;
 }
 .navbar.scrolling a.logo{
   color:#479CFE;
@@ -89,7 +98,7 @@ small{
   border-radius:20px;
   font-weight: bold;
   font-size: 14px;
-  line-height: 60px;
+  line-height: 80px;
   color:white;
   opacity:.8;
 }
@@ -106,6 +115,7 @@ small{
   min-height:100%;
   height:100vh;
   display:none;
+  z-index:9999;
 }
 .nav-mobile a{
   display: block;
@@ -125,7 +135,11 @@ small{
 }
 .nav-mobile-button{
   right:3.5%;
-  top:15px;
+  top:5px;
+  z-index:999999999999;
+}
+.nav-mobile-button i{
+  font-size: 24px;
 }
 .contacts .btn{
   max-width: 300px;
@@ -136,7 +150,7 @@ small{
   -webkit-font-smoothing: antialiased;
 }
 .logo{
-  line-height: 75px;
+  line-height: 100px;
   color:white;
 }
 .line-max{
@@ -145,8 +159,9 @@ small{
   clear: both;
 }
 .slogan{
+  margin-top:5%;
   min-height:400px;
-  height:75vh;
+  height:68vh;
 }
 .slogan h1{
   font-size: 40px;

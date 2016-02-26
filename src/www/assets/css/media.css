@@ -3,6 +3,12 @@
   .nav a{
     padding:0;
   }
+  .navbar a{
+    line-height: 55px;
+  }
+  .navbar a.logo{
+    line-height: 70px;
+  }
   .line-max{
     max-width: 93%;
   }
