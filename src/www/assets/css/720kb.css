@@ -60,7 +60,7 @@ small{
   vertical-align: middle;
 }
 .navbar{
-  transition: all .3s linear;
+  transition: all .5s ease-in-out;
   width:100%;
   left:0;
   right:0;
