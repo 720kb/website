@@ -38,7 +38,10 @@ var ConfigFunction = function ($locationProvider) {
     'link': function navbarDirective(scope, element, attrs) {
 
       var theWindow = angular.element($window);
+      if (theWindow[0].scrollY > 100) {
 
+        element.addClass('scrolling');
+      }
       theWindow.bind('scroll', function onWindowScrollNavbar() {
         if (theWindow[0].scrollY > 100) {
 
