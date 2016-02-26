@@ -43,7 +43,7 @@ var ConfigFunction = function ($locationProvider) {
         element.addClass('scrolling');
       }
       theWindow.bind('scroll', function onWindowScrollNavbar() {
-        if (theWindow[0].scrollY > 80) {
+        if (theWindow[0].scrollY > 60) {
 
           element.addClass('scrolling');
         } else {
