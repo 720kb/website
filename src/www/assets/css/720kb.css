@@ -61,7 +61,7 @@ small{
   vertical-align: middle;
 }
 .navbar{
-  transition: all .25s ease-out;
+  transition: all .25s linear;
   width:100%;
   left:0;
   right:0;
