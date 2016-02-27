@@ -4,14 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="google" content="notranslate" />
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-	<meta http-equiv="cache-control" content="max-age=43200" />
-	<meta name="description" content="720kb web, mobile, apps, open source." >
+	<meta http-equiv="cache-control" content="max-age=86400" />
+	<meta name="description" content="We are 720kb, your solution for public and private oriented products and services." >
+	<meta name="keywords" content="720kb, web, mobile, apps, open source, services, github, javascript, angular, docker, nodejs, development, responsive, public, private, mass, products." >
+	<meta name="audience" content="all" />
+	<meta name="distribution" content="global" />
+	<meta name="rating" content="general" />
+	<meta name="revisit-after" content="1 days" />
 	<meta name="robots" content="index, follow">
 	<meta property="og:url" content="http://720kb.net"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:title" content="720kb"/>
 	<meta property="og:image" content="http://720kb.net/assets/img/720kb-fb.png"/>
-	<meta property="og:description" content="720kb web, mobile, apps, open source."/>
+	<meta property="og:description" content="We are 720kb, your solution for public and private oriented products and services."/>
 	<link rel="stylesheet" type="text/css" href="bower/csshelper/dist/helper.min.css">
 	<link rel="stylesheet" type="text/css" href="bower/animate.css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="bower/angular-fx/dist/angular-fx.min.css">
@@ -23,11 +28,11 @@
 </head>
 <body class="bg-body" id="body" ng-controller="HomeController as ctrl">
 	<div class="line-compress center-content nav-mobile fixed top layer2 hide" ngfx-default="hide" ng-class="{'hide': !ctrl.mobileMenu}" ngfx-fade-in="ctrl.mobileMenu">
-		<a href="/">Hello</a>
-		<a href="#whoweare">Who we are</a>
-		<a href="#contacts">Support</a>
+		<a href="/" ng-click="ctrl.toggleMobileMenu()">Hello</a>
+		<a href="#whoweare" ng-click="ctrl.toggleMobileMenu()">Who we are</a>
+		<a href="#contacts" ng-click="ctrl.toggleMobileMenu()">Support</a>
 		<a target="blank" href="http://twitter.com/720kb_">News</a>
-		<a href="#contacts">Contact us</a>
+		<a href="#contacts" ng-click="ctrl.toggleMobileMenu()">Contact us</a>
 	</div>
 	<div class="home">
 		<div class="separator30 desktop"></div>
@@ -42,7 +47,7 @@
 				<div class="col6 nav right-content">
 					<span class="desktop">
 						<div class="separator5"></div>
-							<div class="separator3"></div>
+						<div class="separator3"></div>
 						<a href="/">Hello</a>
 						<a href="#whowear" data-scroll>Who we are</a>
 						<a href="#contacts">Support</a>
@@ -51,7 +56,7 @@
 					</span>
 					<span class="nav-mobile-button fixed top right layer3 tablet mobile">
 						<a href="javascript:void(0)" ng-click="ctrl.toggleMobileMenu()">
-							<i class="fa fa-bars"></i>
+							<i class="fa fa-bars color-white"></i>
 						</a>
 					</span>
 				</div>
@@ -64,234 +69,243 @@
 				<h1 class="color-white">HELLO</h1>
 				<h3 class="color-white">We are on a mission.</h3>
 			</div>
-			<div class="line line-max slider">
-				<div class="col2">
+			<div class="line slider">
 					<a target="_blank" href="http://slize.co" rel="index,follow" title="Slize, The seven seconds random videochat.">
-						<img src="assets/img/slize.png"/>
+						<img class="slize-logo" src="assets/img/slize.png"/>
 					</a>
-				</div>
-				<div class="col2">
 					<a target="_blank" href="http://realtempo.com" rel="index,follow" title="Realtempo, experimental online rehearsal rooms for musicians.">
-					<img src="assets/img/realtempo.png"/>
-				</a>
-				</div>
-				<div class="col2">
+						<img class="realtempo-logo" src="assets/img/realtempo.png" title="Realtempo, experimental online rehearsal rooms for musicians."/>
+					</a>
 					<a target="_blank" href="http://getfuffa.com" rel="index,follow" title="Fuffa, keep in touch using your feelings.">
-						<img src="assets/img/fuffa.png"/>
+						<img class="fuffa-logo" src="assets/img/fuffa.png" title="Fuffa, keep in touch using your feelings."/>
 					</a>
-				</div>
-				<div class="col2">
 					<a target="_blank" href="http://bitnfc.org" rel="index,follow" title="Bitnfc, the Bitcoin mobile NFC enabled wallet.">
-						<img src="assets/img/bitnfc.png"/>
+						<img class="bitnfc-logo" src="assets/img/bitnfc.png" title="Bitnfc, the Bitcoin mobile NFC enabled wallet."/>
 					</a>
-				</div>
-				<div class="col2">
 					<a target="_blank" href="http://twitter.com/720kb_" rel="index,follow" title="Follow us on Twitter">
-						<img src="assets/img/twitter-follow.png"/>
+						<img class="twitter-logo push-right" src="assets/img/twitter-follow.png" title="Follow us on Twitter"/>
 					</a>
-				</div>
 			</div>
 			<video video-home autoplay muted>
 				<source src="galaxy.mp4" type="video/mp4" />
 			</video>
 		</div>
 	</div>
-	<div class="section line-compress bg-white">
+	<div class="line section bg-white">
 		<div class="line-compress line-max" id="whoweare">
-			<div class="separator100"></div>
-			<div class="col6 line-tablet">
+			<div class="separator50 desktop"></div>
+				<div class="separator50"></div>
+			<div class="col7 line-tablet">
 				<h1 class="font-medium">We are on a mission</h1>
 				<div class="separator30"></div>
-				<h2>
+				<h2 class="col8 line-tablet">
 					<b class="font-medium">720kb</b> is to remind how, in the past, despite the less accessible technologies, people and ideas managed to revolutionize the world and life.
 				</h2>
 				<div class="separator15"></div>
-				<h2>
+				<h2 class="col8 line-tablet">
 					We are your solution for private and public oriented products.
 					<div></div>
 					Reach us if you want your idea to come truth.
 				</h2>
-				<div class="separator50"></div>
-				<div class="col2">
-					<p class="font-medium">
-						<a rel="noindex" target="_blank" href="https://www.linkedin.com/in/darioandrei">
-							<span class="color-black toggle-opacity-inverse-hover">Dario Andrei</span>
-						</a>
-					</p>
-					<div class="separator5"></div>
-					<small class="color-muted">Co-founder</small>
-				</div>
-				<div class="col2">
-					<p class="font-medium">
-					<a rel="noindex" target="_blank" href="https://www.linkedin.com/in/filippooretti">
-						<span class="color-black toggle-opacity-inverse-hover">Filippo Oretti</span>
-					</a>
-					</p>
-					<div class="separator5"></div>
-					<small class="color-muted">Co-founder</small>
-				</div>
-				<div class="col3">
-					<p class="font-medium">
-						<a rel="noindex" target="_blank" href="https://www.linkedin.com/in/makevoid">
-						<span class="color-black toggle-opacity-inverse-hover">Francesco Canessa</span>
-					</a>
-				</p>
-					<div class="separator5"></div>
-					<small class="color-muted">Bitcoin Apps Developer</small>
-				</div>
-				<div class="col3">
-					<p class="font-medium">
-						<a rel="noindex" target="_blank" href="https://www.linkedin.com/in/luca-bressanelli-86768529">
-						<span class="color-black toggle-opacity-inverse-hover">	Luca Bressanelli</span>
-						</a>
-						</p>
-					<div class="separator5"></div>
-					<small class="color-muted">Advisor, Java & MS Expert</small>
+				<div class="separator50 desktop"></div>
+				<div class="separator15 tablet mobile"></div>
+				<div class="separator15"></div>
+				<div class="col9 line-tablet desktop">
+					<div class="col2 line-tablet">
+						<div class="separator10 mobile tablet"></div>
+						<h3 class="font-medium">
+							<a rel="noindex" target="_blank" href="https://www.linkedin.com/in/darioandrei">
+								<span class="color-black toggle-opacity-inverse-hover">Dario Andrei</span>
+							</a>
+						</h3>
+						<div class="separator5"></div>
+						<small class="color-muted">Co-founder</small>
+					</div>
+					<div class="col2 line-tablet">
+						<div class="separator10 mobile tablet"></div>
+						<h3 class="font-medium">
+							<a rel="noindex" target="_blank" href="https://www.linkedin.com/in/filippooretti">
+								<span class="color-black toggle-opacity-inverse-hover">Filippo Oretti</span>
+							</a>
+						</h3>
+						<div class="separator5"></div>
+						<small class="color-muted">Co-founder</small>
+					</div>
+					<div class="col3 line-tablet">
+						<div class="separator10 mobile tablet"></div>
+						<h3 class="font-medium">
+							<a rel="noindex" target="_blank" href="https://www.linkedin.com/in/makevoid">
+								<span class="color-black toggle-opacity-inverse-hover">Francesco Canessa</span>
+							</a>
+						</h3>
+						<div class="separator5"></div>
+						<small class="color-muted">Bitcoin Apps Developer</small>
+					</div>
+					<div class="col3 line-tablet">
+						<div class="separator10 mobile tablet"></div>
+						<h3 class="font-medium">
+							<a rel="noindex" target="_blank" href="https://www.linkedin.com/in/luca-bressanelli-86768529">
+								<span class="color-black toggle-opacity-inverse-hover">	Luca Bressanelli</span>
+							</a>
+						</h3>
+						<div class="separator5"></div>
+						<small class="color-muted">Advisor, Java & MS Expert</small>
+					</div>
 				</div>
 				<div class="separator30"></div>
 			</div>
-		</div>
-		<div class="col3 offset-left1 radius5 line-tablet">
-			<div class="separator15"></div>
-			<div class="separator50 tablet mobile"></div>
-			<div id="particles">
-				<div class="center-content color-black toggle-opacity-inverse-hover">
-					<a class="color-black toggle-opacity-inverse-hover" target="_blank" href="https://dribbble.com/720kb">
-						The Design yard
-					</a>
+			<div class="col3 radius5 line-tablet">
+				<div class="separator1"></div>
+				<div class="separator30 tablet mobile"></div>
+				<div class="separator50 tablet mobile"></div>
+				<div id="particles">
+					<div class="center-content color-black toggle-opacity-inverse-hover">
+						<a class="color-black toggle-opacity-inverse-hover" target="_blank" href="https://dribbble.com/720kb">
+							<div class="separator15"></div>
+							The Design yard
+						</a>
+					</div>
 				</div>
-			</div>
-			<h3 class="font-medium">Google Prize winners<h3>
-				<div class="separator10"></div>
-				<a>TADHACK mini London</a>
-				<div class="separator10"></div>
-				Project <a href="">Teach Music RTC</a>
 				<div class="separator15"></div>
-				<h3 class="font-medium">Hackcoin London winners<h3>
-					<div class="separator10"></div>
-					<a>Hackcoin London</a>
-					<div class="separator10"></div>
-					Project <a href="">Bitnfc Desktop</a>
+				<div class="widget desktop">
+					<h2>Google Prize winners</h2>
+					<div class="separator5"></div>
+					<div class="separator3"></div>
+					<a href="http://tadhack.com/2015/tadhack-mini-london/" target="_blank" rel="nofollow">
+						TADHACK mini London
+					</a>
+					<div></div>
+					 Project <a href="https://github.com/720kb/TeachMusicRTC" target="_blank">Teach Music RTC</a>
 				</div>
-				<div class="separator100"></div>
+				<div class="widget desktop">
+					<h2>Hackcoin London winners</h2>
+					<div class="separator5"></div>
+					<div class="separator3"></div>
+					<a href="http://hackco.in/" target="_blank" rel="nofollow"> Hackcoin London</a>
+					<div></div>
+					 Project <a href="https://github.com/makevoid/BitNFC_desktop" target="_blank">Bitnfc Desktop</a>
+				</div>
 			</div>
-			<div class="section line bg-grey color-white">
-				<div class="line-compress line-max">
-					<div class="separator15"></div>
-					<div class="line">
-						<div class="col5">
+			<div class="separator50"></div>
+			<div class="separator50 desktop"></div>
+		</div>
+		<div class="section line bg-grey color-white">
+			<div class="line-compress line-max">
+				<div class="separator15"></div>
+				<div class="line">
+					<div class="col5">
 						<div class="col2 color-muted line-tablet">
 							<div class="separator15"></div>
-								<div class="separator5"></div>
+							<div class="separator5"></div>
 							<a target="_blank" href="http://github.com/720kb" alt="720kb on github" title="720kb github projects">
-								<img class="toggle-opacity-hover " src="/assets/img/github.png" width="110" alt="720kb on github" title="720kb github projects"/>
+								<img class="toggle-opacity-hover" src="/assets/img/github.png" width="100" alt="720kb on github" title="720kb github projects"/>
 							</a>
 						</div>
 						<div class="col6 color-muted left-content desktop">
 							<div class="separator30"></div>
-							<div class="separator5"></div>
+							<div class="separator3"></div>
 							<h3>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;
 								We think open source
 							</h3>
 						</div>
-						</div>
-						<div class="col5 right-content">
+					</div>
+					<div class="col5 right-content">
 						<div class="line color-muted left-content-tablet right-content">
 							<div class="separator30"></div>
-								<div class="separator5"></div>
+							<div class="separator3"></div>
 							<a class="color-muted" target="_blank" href="http://github.com/720kb" alt="720kb on github" title="720kb github projects">
-								<h3 class="toggle-opacity-inverse-hover line right-content">
+								<h3 class="toggle-opacity-inverse-hover color-muted line right-content">
 									<span class="desktop">
 										See all the projects
 										&nbsp;<i class="fa fa-chevron-right v-middle"></i>
 									</span>
 									<span class="tablet mobile">
-										Open projects
-									&nbsp;<i class="fa fa-chevron-right v-middle"></i>
-								</span>
+										The projects
+										&nbsp;<i class="fa fa-chevron-right v-middle"></i>
+									</span>
 								</h3>
 							</a>
 						</div>
-						</div>
 					</div>
-					<div class="separator30"></div>
 				</div>
+				<div class="separator30"></div>
 			</div>
-			<div class="section line-compress bg-blue color-white contacts">
-				<div class="line-compress line-max" id="contacts">
-					<div class="separator100"></div>
-					<h1 class="font-medium">Contact us</h1>
-					<div class="separator15"></div>
-					<div class="col6 line-tablet">
-						<h2 class="font-medium">
-							Contact us if you have any question or if you need support.
-						</h2>
-						<div class="separator10"></div>
-						<h2 class="color-muted-inverse-less">
-							Depending on your timezone and on the email volumes, we'll be in touch with you as quick as we can.
-						</h2>
-					</div>
-					<div class="separator50"></div>
-					<div class="separator15"></div>
-					<div class="col3 line-tablet">
-						<button class="btn btn-medium color-white radius3">
-							<div class="separator5"></div>
-							Generic
-							<div class="separator5"></div>
-						</button>
-					</div>
-					<div class="col4 line-tablet">
-						<button class="btn btn-medium color-white radius3">
-							<div class="separator5"></div>
-							Technical support
-							<div class="separator5"></div>
-						</button>
-					</div>
-					<div class="col3 line-tablet">
-						<button class="btn btn-medium color-white radius3">
-							<div class="separator5"></div>
-							Business and customers
-							<div class="separator5"></div>
-						</button>
-					</div>
-				</div>
+		</div>
+		<div class="section line-compress bg-blue color-white contacts">
+			<div class="line-compress line-max" id="contacts">
 				<div class="separator100"></div>
-			</div>
-			<div class="line footer">
+				<h1 class="font-medium">Contact us</h1>
 				<div class="separator15"></div>
-				<footer class="line-compress line-max center-content-mobile">
+				<div class="col6 line-tablet">
+					<h2 class="font-medium">
+						Contact us if you have any question or if you need support.
+					</h2>
+					<div class="separator10"></div>
+					<h2 class="color-muted-inverse-less">
+						Depending on your timezone and on the email volumes, we'll be in touch with you as quick as we can.
+					</h2>
+				</div>
+				<div class="separator50"></div>
+				<div class="separator15"></div>
+				<div class="col3 line-tablet">
+					<button class="btn btn-medium color-white radius3">
+						<div class="separator5"></div>
+						Generic
+						<div class="separator5"></div>
+					</button>
+				</div>
+				<div class="col4 line-tablet">
+					<button class="btn btn-medium color-white radius3">
+						<div class="separator5"></div>
+						Technical support
+						<div class="separator5"></div>
+					</button>
+				</div>
+				<div class="col3 line-tablet">
+					<button class="btn btn-medium color-white radius3">
+						<div class="separator5"></div>
+						Business and customers
+						<div class="separator5"></div>
+					</button>
+				</div>
+			</div>
+			<div class="separator100"></div>
+		</div>
+		<div class="line footer">
+			<div class="separator15"></div>
+			<footer class="line-compress line-max">
 				<small>
-						Copyright	© <a class="toggle-opacity-inverse-hover" target="_self" href="/">720kb</a> &nbsp; 2016, All rights reserved
-					</small>
-				</footer>
-				<div class="separator15"></div>
-			</div>
-			<!--<div id="cookies" class="line center-content font-x-small bg-white color-muted">
-			<div class="separator10"></div>
-			We use cookies for your better experience
-			<button class="toggle-opacity-hover" type="button" id="720kb-cookie-button">OK</button>
-			<div class="separator10"></div>
-		</div>-->
-		<!--<script type="text/javascript" src="assets/js/720kb.cookies.js"></script>-->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
-		<script type="text/javascript" src="bower/angular-fx/dist/angular-fx.min.js"></script>
-		<script type="text/javascript" src="assets/js/index.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-		<script type="text/javascript">
-		(function particlesBoot() {
-			particlesJS.load('particles', 'assets/particles.json');
-		}());
-		</script>
-		<!--G analytics-->
-		<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-54873387-1', 'auto');
-		ga('send', 'pageview');
-		</script>
-	</body>
-	</html>
+					Copyright	© <a class="toggle-opacity-inverse-hover" target="_self" href="/">720kb</a> &nbsp; 2016, All rights reserved
+				</small>
+			</footer>
+			<div class="separator15"></div>
+		</div>
+		<!--<div id="cookies" class="line center-content font-x-small bg-white color-muted">
+		<div class="separator10"></div>
+		We use cookies for your better experience
+		<button class="toggle-opacity-hover" type="button" id="720kb-cookie-button">OK</button>
+		<div class="separator10"></div>
+	</div>-->
+	<!--<script type="text/javascript" src="assets/js/720kb.cookies.js"></script>-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+	<script type="text/javascript" src="bower/angular-fx/dist/angular-fx.min.js"></script>
+	<script type="text/javascript" src="assets/js/index.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+	<script type="text/javascript">
+	(function particlesBoot() {
+		particlesJS.load('particles', 'assets/particles.json');
+	}());
+	</script>
+	<!--G analytics-->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-54873387-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+</body>
+</html>

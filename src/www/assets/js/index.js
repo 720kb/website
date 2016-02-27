@@ -33,7 +33,7 @@ var ConfigFunction = function ($locationProvider) {
 }
 , NavbarDirective = function navbarDirective($window) {
   return {
-    'restrict': 'C',
+    /*'restrict': 'C',
     'scope': true,
     'link': function navbarDirective(scope, element, attrs) {
 
@@ -50,8 +50,8 @@ var ConfigFunction = function ($locationProvider) {
           element.removeClass('scrolling');
         }
       });
-    }
-  }
+    }*/
+  };
 }
 , VideoDirective = function videoDirective() {
 

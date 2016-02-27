@@ -28,7 +28,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
 .section{
   -webkit-font-smoothing: antialiased;
 }
-a {
+a, a img {
   transition: all .3s linear;
 }
 .bg-white a{
@@ -48,57 +48,47 @@ small{
   font-size: 14px;
 }
 .home{
-  padding-top:80px;
   min-height:100%;
   height:100vh;
+}
+.slider a{
+  margin-right: 6%;
 }
 .slider a:hover img{
   opacity:.8;
 }
 .slider a img{
-  width: 100%;
-  max-width: 180px;
+  width:100%;
   vertical-align: middle;
 }
+.slider .slize-logo{
+  max-width: 100px;
+}
+.slider .fuffa-logo{
+  max-width: 101px;
+}
+.slider .realtempo-logo{
+  max-width: 167px;
+}
+.slider .bitnfc-logo{
+  max-width: 101px;
+}
+.slider .twitter-logo{
+  max-width: 56px;
+}
 .navbar{
-  transition: all .25s linear;
   width:100%;
   left:0;
   right:0;
   top:0;
-  position:fixed;
   height:60px;
   z-index:9999;
-}
-.navbar.scrolling {
-  background: white;
-  height:60px;
-  box-shadow:0 2px 3px rgba(0,0,0, .05);
-}
-.navbar.scrolling a {
-  color:black;
-  line-height: 45px;
-  opacity:.6;
-  color:rgba(0,0,0, .8);
-}
-.navbar.scrolling a:hover{
-  background: #f4f6f6;
-  opacity:.86;
-}
-.navbar.scrolling .nav-mobile-button a:hover{
-  background: none;
-}
-.navbar.scrolling a.logo{
-  color:#479CFE;
-  line-height: 60px;
-  opacity:1;
 }
 .nav a{
   padding:3px 10px;
   border-radius:20px;
   font-weight: bold;
   font-size: 14px;
-  line-height: 80px;
   color:white;
   opacity:.8;
 }
@@ -134,12 +124,18 @@ small{
   opacity:1;
 }
 .nav-mobile-button{
-  right:3.5%;
-  top:5px;
+  top:0px;
+  right:0;
   z-index:999999999999;
+}
+.nav-mobile-button a,.nav-mobile-button a:hover{
+  opacity:1;
+  background: none;
 }
 .nav-mobile-button i{
   font-size: 24px;
+  padding: 12px 14px;
+  background: rgba(0,0,0,.2);
 }
 .contacts .btn{
   max-width: 300px;
@@ -150,7 +146,6 @@ small{
   -webkit-font-smoothing: antialiased;
 }
 .logo{
-  line-height: 100px;
   color:white;
 }
 .line-max{
@@ -159,7 +154,7 @@ small{
   clear: both;
 }
 .slogan{
-  margin-top:5%;
+  margin-top:10%;
   min-height:400px;
   height:68vh;
 }
@@ -168,6 +163,12 @@ small{
 }
 .slogan h3{
   font-size:30px;
+}
+.widget{
+  width:90%;
+  padding: 20px 3%;
+  margin: 0 auto;
+  float:none;
 }
 video{
   position: fixed;

@@ -3,14 +3,29 @@
   .nav a{
     padding:0;
   }
-  .navbar a{
-    line-height: 55px;
-  }
-  .navbar a.logo{
-    line-height: 70px;
+  .widget{
+    width:100%;
+    padding:20px 0;
   }
   .line-max{
     max-width: 93%;
+  }
+  .slider .twitter-logo{
+    float: none;
+    position: absolute;
+    right:2%;
+  }
+  .slider .slize-logo{
+    max-width: 85px;
+  }
+  .slider .fuffa-logo{
+    max-width: 86px;
+  }
+  .slider .realtempo-logo{
+    max-width: 152px;
+  }
+  .slider .bitnfc-logo{
+    max-width: 86px;
   }
   .contacts .btn{
     max-width: 100%;
