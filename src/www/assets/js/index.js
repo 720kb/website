@@ -16,8 +16,11 @@ var ConfigFunction = function ($locationProvider) {
     , setActiveLink = function setActiveLink(link) {
       that.activeLink = link;
     }
-    , toggleMobileMenu = function toggleMobileMenu() {
-      that.mobileMenu = !that.mobileMenu;
+    , toggleMobileMenu = function toggleMobileMenu(event, toggle) {
+      event.preventDefault();
+      if (toggle) {
+        that.mobileMenu = !that.mobileMenu;
+      }
     };
 
   if ($location.$$hash) {

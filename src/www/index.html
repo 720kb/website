@@ -28,11 +28,11 @@
 </head>
 <body class="bg-body" id="body" ng-controller="HomeController as ctrl">
 	<div class="line-compress center-content nav-mobile fixed top layer2 hide" ngfx-default="hide" ng-class="{'hide': !ctrl.mobileMenu}" ngfx-fade-in="ctrl.mobileMenu">
-		<a href="/" ng-click="ctrl.toggleMobileMenu()" rel="index,follow">Hello</a>
-		<a href="#whoweare" ng-click="ctrl.toggleMobileMenu()" rel="index,follow">Who we are</a>
-		<a href="#contacts" ng-click="ctrl.toggleMobileMenu()" rel="index,follow">Support</a>
+		<a href="/" rel="index,follow">Hello</a>
+		<a href="#whoweare" ng-click="ctrl.toggleMobileMenu($event, false)" rel="index,follow">Who we are</a>
+		<a href="#contacts" ng-click="ctrl.toggleMobileMenu($event, false)" rel="index,follow">Support</a>
 		<a target="blank" href="http://twitter.com/720kb_" rel="index,follow">News</a>
-		<a href="#contacts" ng-click="ctrl.toggleMobileMenu()" rel="index,follow">Contact us</a>
+		<a href="#contacts" ng-click="ctrl.toggleMobileMenu($event, false)" rel="index,follow">Contact us</a>
 	</div>
 	<div class="home">
 		<div class="separator30 desktop"></div>
@@ -49,10 +49,10 @@
 						<div class="separator5"></div>
 						<div class="separator3"></div>
 						<a href="/" rel="index,follow">Hello</a>
-						<a href="#whoweare" rel="index,follow">Who we are</a>
-						<a href="#contacts" rel="index,follow">Support</a>
+						<a href="#whoweare" data-scroll ng-click="ctrl.toggleMobileMenu($event, false)" rel="index,follow">Who we are</a>
+						<a href="#contacts" data-scroll ng-click="ctrl.toggleMobileMenu($event, false)" rel="index,follow">Support</a>
 						<a target="blank" href="http://twitter.com/720kb_" rel="index,follow">News</a>
-						<a href="#contacts" rel="index,follow">Contact us</a>
+						<a href="#contacts" data-scroll ng-click="ctrl.toggleMobileMenu($event, false)" rel="index,follow">Contact us</a>
 					</span>
 					<span class="nav-mobile-button fixed top right layer3 tablet mobile">
 						<a href="javascript:void(0)" ng-click="ctrl.toggleMobileMenu()">
@@ -293,6 +293,15 @@
 	<script type="text/javascript" src="bower/angular-fx/dist/angular-fx.min.js"></script>
 	<script type="text/javascript" src="assets/js/index.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+	<script type="text/javascript" src="bower/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+	<script type="text/javascript">
+		smoothScroll.init({
+			'speed': 900, // Integer. How fast to complete the scroll in milliseconds
+			'easing': 'easeInOutCubic', // Easing pattern to use
+			'offset': 0, // Integer. How far to offset the scrolling anchor location in pixels
+			'updateURL': true, // Boolean. If true, update the URL hash on scroll
+		});
+	</script>
 	<script type="text/javascript">
 	(function particlesBoot() {
 		particlesJS.load('particles', 'assets/particles.json');
