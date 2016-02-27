@@ -149,8 +149,9 @@ small{
 .contacts .btn{
   max-width: 300px;
   background: rgba(0,0,0, .08);
-  letter-spacing:0.5px;
+  letter-spacing:0px;
   font-size: 16px;
+  color:white;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
 }

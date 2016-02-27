@@ -16,6 +16,14 @@ var ConfigFunction = function ($locationProvider) {
     , setActiveLink = function setActiveLink(link) {
       that.activeLink = link;
     }
+    , mailTo = function mailTo(prefix) {
+
+      var affix = '@'
+        , antispam = '720kb.net';
+
+        return prefix + affix + antispam;
+
+    }
     , toggleMobileMenu = function toggleMobileMenu(event, toggle) {
 
       event.preventDefault();
@@ -33,6 +41,7 @@ var ConfigFunction = function ($locationProvider) {
     that.activeLink = 'hello';
   }
 
+  that.mailTo = mailTo;
   that.setActiveLink =  setActiveLink;
   that.toggleMobileMenu = toggleMobileMenu;
 }
