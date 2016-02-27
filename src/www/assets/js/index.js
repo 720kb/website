@@ -74,8 +74,22 @@ var ConfigFunction = function ($locationProvider) {
     'scope': true,
     'link': function linkingFunction(scope, element, attr) {
       element[0].pause();
-      element[0].playbackRate = 0.55;
+      element[0].playbackRate = 0.65;
 
+      angular.element(element).bind('timeupdate', function (e) {
+          if (e.target.currentTime > 5.9 &&
+              e.target.currentTime < 6.2){
+
+              element[0].playbackRate = 0.55;
+          } else if (e.target.currentTime >= 6.2 &&
+            e.target.currentTime < 6.9) {
+
+            element[0].playbackRate = 0.4;
+          } else if (e.target.currentTime >= 6.9) {
+
+            element[0].playbackRate = 0.25;
+          }
+      });
       element[0].play();
     }
   };
