@@ -1,7 +1,26 @@
 @font-face {
-  font-family:'Avenir';
-  src: url('../fonts/avenir-medium.eot');
-  src: url('../fonts/avenir-medium.eot') format('embedded-opentype'), url('../fonts/avenir-medium.woff2') format('woff2'), url('../fonts/avenir-medium.woff') format('woff'), url('../fonts/avenir-medium.ttf') format('truetype'), url('../fonts/avenir-medium.svg#AvenirMedium') format('svg');
+  font-family:'Avenir Next';
+  font-weight:normal;
+  src: url('../fonts/AvenirNext-Regular.eot');
+  src: url('../fonts/AvenirNext-Regular.eot') format('embedded-opentype'), url('../fonts/AvenirNext-Regular.woff2') format('woff2'), url('../fonts/AvenirNext-Regular.woff') format('woff'), url('../fonts/AvenirNext-Regular.ttf') format('truetype'), url('../fonts/AvenirNext-Regular.svg#AvenirRegular') format('svg');
+}
+@font-face {
+  font-family:'Avenir Next';
+  font-weight: 500;
+  src: url('../fonts/AvenirNext-Medium.eot');
+  src: url('../fonts/AvenirNext-Medium.eot') format('embedded-opentype'), url('../fonts/AvenirNext-Medium.woff2') format('woff2'), url('../fonts/AvenirNext-Medium.woff') format('woff'), url('../fonts/AvenirNext-Medium.ttf') format('truetype'), url('../fonts/AvenirNext-Medium.svg#AvenirMedium') format('svg');
+}
+@font-face {
+  font-family:'Avenir Next';
+  font-weight:800;
+  src: url('../fonts/AvenirNext-Bold.eot');
+  src: url('../fonts/AvenirNext-Bold.eot') format('embedded-opentype'), url('../fonts/AvenirNext-Bold.woff2') format('woff2'), url('../fonts/AvenirNext-Bold.woff') format('woff'), url('../fonts/AvenirNext-Bold.ttf') format('truetype'), url('../fonts/AvenirNext-Bold.svg#AvenirBold') format('svg');
+}
+@font-face {
+  font-family:'Avenir Next';
+  font-weight:600;
+  src: url('../fonts/AvenirNext-DemiBold.eot');
+  src: url('../fonts/AvenirNext-DemiBold.eot') format('embedded-opentype'), url('../fonts/AvenirNext-DemiBold.woff2') format('woff2'), url('../fonts/AvenirNext-DemiBold.woff') format('woff'), url('../fonts/AvenirNext-DemiBold.ttf') format('truetype'), url('../fonts/AvenirNext-DemiBold.svg#AvenirDemiBold') format('svg');
 }
 html,body {
   background:none;
@@ -51,7 +70,7 @@ small{
   height:600px;
 }
 .slider{
-  margin-top:260px;
+  margin-top:230px;
 }
 .slider a{
   margin-right: 5%;
@@ -87,7 +106,6 @@ small{
   width:100%;
   left:0;
   right:0;
-  top:0;
   height:60px;
   z-index:9999;
 }
@@ -165,7 +183,8 @@ small{
   font-size: 35px;
 }
 .slogan h3{
-  font-size:28px;
+  line-height: 36px;
+  font-size:26px;
 }
 .widget{
   width:90%;
@@ -219,8 +238,11 @@ video{
 .footer, .footer a, .footer *{
   font-size:12px;
   font-weight: normal;
-  color:rgba(255,255,255, .15);
+  color:#B4D5DE;
   background: #222;
+}
+.footer *{
+  opacity: .8;
 }
 .separator1,.separator2,.separator3{
   width:100%;
