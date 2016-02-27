@@ -216,10 +216,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
   background: linear-gradient(to bottom,  rgba(1,153,241,0) 68%,rgba(1,153,241,0.3) 86%,rgba(1,153,241,0.94) 96%,rgba(1,153,241,1) 97%,rgba(1,153,241,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000199f1', endColorstr='#0199f1',GradientType=0 );
 }
-.footer, .footer *{
+.footer, .footer *, .footer a{
   font-size:13px;
   color:rgba(0,0,0, .3);
-  background: #4E5759;
+  background: #03C7E5;
 }
 .separator1,.separator2,.separator3{
   width:100%;

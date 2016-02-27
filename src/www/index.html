@@ -28,11 +28,11 @@
 </head>
 <body class="bg-body" id="body" ng-controller="HomeController as ctrl">
 	<div class="line-compress center-content nav-mobile fixed top layer2 hide" ngfx-default="hide" ng-class="{'hide': !ctrl.mobileMenu}" ngfx-fade-in="ctrl.mobileMenu">
-		<a href="/" ng-click="ctrl.toggleMobileMenu()">Hello</a>
-		<a href="#whoweare" ng-click="ctrl.toggleMobileMenu()">Who we are</a>
-		<a href="#contacts" ng-click="ctrl.toggleMobileMenu()">Support</a>
-		<a target="blank" href="http://twitter.com/720kb_">News</a>
-		<a href="#contacts" ng-click="ctrl.toggleMobileMenu()">Contact us</a>
+		<a href="/" ng-click="ctrl.toggleMobileMenu()" rel="index,follow">Hello</a>
+		<a href="#whoweare" ng-click="ctrl.toggleMobileMenu()" rel="index,follow">Who we are</a>
+		<a href="#contacts" ng-click="ctrl.toggleMobileMenu()" rel="index,follow">Support</a>
+		<a target="blank" href="http://twitter.com/720kb_" rel="index,follow">News</a>
+		<a href="#contacts" ng-click="ctrl.toggleMobileMenu()" rel="index,follow">Contact us</a>
 	</div>
 	<div class="home">
 		<div class="separator30 desktop"></div>
@@ -48,11 +48,11 @@
 					<span class="desktop">
 						<div class="separator5"></div>
 						<div class="separator3"></div>
-						<a href="/">Hello</a>
-						<a href="#whowear" data-scroll>Who we are</a>
-						<a href="#contacts">Support</a>
-						<a target="blank" href="http://twitter.com/720kb_">News</a>
-						<a href="#contacts">Contact us</a>
+						<a href="/" rel="index,follow">Hello</a>
+						<a href="#whoweare" rel="index,follow">Who we are</a>
+						<a href="#contacts" rel="index,follow">Support</a>
+						<a target="blank" href="http://twitter.com/720kb_" rel="index,follow">News</a>
+						<a href="#contacts" rel="index,follow">Contact us</a>
 					</span>
 					<span class="nav-mobile-button fixed top right layer3 tablet mobile">
 						<a href="javascript:void(0)" ng-click="ctrl.toggleMobileMenu()">
@@ -67,7 +67,7 @@
 			<div class="slogan">
 				<div class="separator100"></div>
 				<h1 class="color-white">HELLO</h1>
-				<h3 class="color-white">We are on a mission.</h3>
+				<h3 class="color-white">Welcome to a new galaxy.</h3>
 			</div>
 			<div class="line slider">
 					<a target="_blank" href="http://slize.co" rel="index,follow" title="Slize, The seven seconds random videochat.">
@@ -157,16 +157,16 @@
 			<div class="col3 radius5 line-tablet">
 				<div class="separator1"></div>
 				<div class="separator30 tablet mobile"></div>
-				<div class="separator50 tablet mobile"></div>
+				<div class="separator50 desktop"></div>
 				<div id="particles">
 					<div class="center-content color-black toggle-opacity-inverse-hover">
 						<a class="color-black toggle-opacity-inverse-hover" target="_blank" href="https://dribbble.com/720kb">
-							<div class="separator15"></div>
+							<div class="separator15 desktop"></div>
 							The Design yard
 						</a>
 					</div>
 				</div>
-				<div class="separator15"></div>
+				<div class="separator15 desktop"></div>
 				<div class="widget desktop">
 					<h2>Google Prize winners</h2>
 					<div class="separator5"></div>
@@ -183,7 +183,7 @@
 					<div class="separator3"></div>
 					<a href="http://hackco.in/" target="_blank" rel="nofollow"> Hackcoin London</a>
 					<div></div>
-					 Project <a href="https://github.com/makevoid/BitNFC_desktop" target="_blank">Bitnfc Desktop</a>
+					 Project <a href="http://bitnfc.org" target="_blank">Bitnfc Desktop</a>
 				</div>
 			</div>
 			<div class="separator50"></div>
@@ -214,7 +214,7 @@
 						<div class="line color-muted left-content-tablet right-content">
 							<div class="separator30"></div>
 							<div class="separator3"></div>
-							<a class="color-muted" target="_blank" href="http://github.com/720kb" alt="720kb on github" title="720kb github projects">
+							<a class="color-muted" target="_blank" href="http://github.com/720kb" alt="720kb on github" title="720kb github projects" rel="index,follow">
 								<h3 class="toggle-opacity-inverse-hover color-muted line right-content">
 									<span class="desktop">
 										See all the projects
@@ -275,8 +275,8 @@
 		<div class="line footer">
 			<div class="separator15"></div>
 			<footer class="line-compress line-max">
-				<small>
-					Copyright	© <a class="toggle-opacity-inverse-hover" target="_self" href="/">720kb</a> &nbsp; 2016, All rights reserved
+				<small class="font-medium">
+					Copyright	© <a class="color-muted toggle-opacity-inverse-hover" target="_self" href="/">720kb</a> &nbsp; 2016, All rights reserved
 				</small>
 			</footer>
 			<div class="separator15"></div>
