@@ -1,0 +1,43 @@
+/*tablet*/
+@media screen and (max-width:800px) {
+  .nav a{
+    padding:0;
+  }
+  .widget{
+    width:100%;
+    padding:20px 0;
+  }
+  .line-max{
+    max-width: 93%;
+  }
+  .slider .twitter-logo{
+    margin-right:2%;
+  }
+  .slider .slize-logo{
+    max-width: 85px;
+    margin-right:1%;
+  }
+  .slider .fuffa-logo{
+    max-width: 86px;
+    margin-right:1%;
+  }
+  .slider .realtempo-logo{
+    max-width: 135px;
+    margin-right:1%;
+  }
+  .slider .bitnfc-logo{
+    max-width: 86px;
+    margin-right:1%;
+  }
+  .contacts .btn{
+    max-width: 100%;
+    line-height: 40px;
+    margin: 10px 0;
+  }
+  .center-content-tablet{
+    text-align: center;
+  }
+  .left-content-tablet{
+    text-align: left;
+  }
+}

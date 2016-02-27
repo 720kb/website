@@ -4,6 +4,7 @@
   "devDependencies": {},
   "dependencies": {
     "angular-fx": "~1.0.0",
-    "csshelper": "~1.0.1"
+    "csshelper": "~1.0.1",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#^9.1.1"
   }
 }
