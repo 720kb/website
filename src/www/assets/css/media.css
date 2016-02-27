@@ -10,6 +10,12 @@
   .line-max{
     max-width: 93%;
   }
+  .home{
+    height:600px;
+  }
+  .slider{
+    margin-top: 240px;
+  }
   .slider .twitter-logo{
     margin-right:2%;
   }
