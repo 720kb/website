@@ -17,7 +17,9 @@ var ConfigFunction = function ($locationProvider) {
       that.activeLink = link;
     }
     , toggleMobileMenu = function toggleMobileMenu(event, toggle) {
+
       event.preventDefault();
+
       if (toggle) {
         that.mobileMenu = !that.mobileMenu;
       }
@@ -56,13 +58,16 @@ var ConfigFunction = function ($locationProvider) {
     }*/
   };
 }
-, VideoDirective = function videoDirective() {
+, VideoDirective = function videoDirective($window) {
 
   return {
     'restrict':'A',
+    'scope': true,
     'link': function linkingFunction(scope, element, attr) {
+      element[0].pause();
+      element[0].playbackRate = 0.55;
 
-      element[0].playbackRate = 1;
+      element[0].play();
     }
   };
 }
@@ -73,5 +78,5 @@ angular.module('website', [
 .config(['$locationProvider', ConfigFunction])
 .controller('HomeController', ['$scope', '$location', '$window', HomeController])
 .directive('navbar', ['$window', NavbarDirective])
-.directive('videoHome',[VideoDirective]);
+.directive('videoHome',['$window', VideoDirective]);
 }(angular));

@@ -4,7 +4,7 @@
   src: url('../fonts/avenir-medium.eot') format('embedded-opentype'), url('../fonts/avenir-medium.woff2') format('woff2'), url('../fonts/avenir-medium.woff') format('woff'), url('../fonts/avenir-medium.ttf') format('truetype'), url('../fonts/avenir-medium.svg#AvenirMedium') format('svg');
 }
 html,body {
-  background:white;
+  background:none;
   padding:0 0 0 0;
   margin: 0 auto;
   overflow-x:hidden;
@@ -51,8 +51,12 @@ small{
   min-height:100%;
   height:100vh;
 }
+.slider{
+  position: absolute;
+  bottom:13px;
+}
 .slider a{
-  margin-right: 6%;
+  margin-right: 5%;
 }
 .slider a:hover img{
   opacity:.8;
@@ -63,18 +67,23 @@ small{
 }
 .slider .slize-logo{
   max-width: 100px;
+  padding-right:1%;
 }
 .slider .fuffa-logo{
   max-width: 101px;
+  padding-right:1%;
 }
 .slider .realtempo-logo{
-  max-width: 167px;
+  max-width: 150px;
+  padding-right:1%;
 }
 .slider .bitnfc-logo{
   max-width: 101px;
+  padding-right:1%;
 }
 .slider .twitter-logo{
   max-width: 56px;
+  margin-right:40px;
 }
 .navbar{
   width:100%;
@@ -154,9 +163,7 @@ small{
   clear: both;
 }
 .slogan{
-  margin-top:10%;
-  min-height:400px;
-  height:68vh;
+  margin-top:15%;
 }
 .slogan h1{
   font-size: 40px;
@@ -171,6 +178,7 @@ small{
   float:none;
 }
 video{
+  background: black;
   position: fixed;
   z-index: -1;
   right: 0;
@@ -185,18 +193,13 @@ video{
   -o-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  -webkit-filter: saturate(1.05);
 }
 .bg-blue{
   background-color: #0199f1;
 }
 .bg-lightblue{
   background-color: #CFF1FA;
-}
-.bg-diagonal{background: rgb(224,243,250);
-background: -moz-linear-gradient(-45deg,  rgba(224,243,250,1) 0%, rgba(216,240,252,1) 50%, rgba(121,197,252,1) 50%, rgba(121,197,252,1) 100%);
-background: -webkit-linear-gradient(-45deg,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(121,197,252,1) 50%,rgba(121,197,252,1) 100%);
-background: linear-gradient(135deg,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(121,197,252,1) 50%,rgba(121,197,252,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#79c5fc',GradientType=1 );
 }
 .bg-grey{
   background-color: #eee;
@@ -210,12 +213,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
 .color-muted-inverse-less{
   color:rgba(255, 255, 255, .8);
 }
-.bg-body{
-  height:100vh;
-  background: -moz-linear-gradient(top,  rgba(1,153,241,0) 68%, rgba(1,153,241,0.3) 86%, rgba(1,153,241,0.94) 96%, rgba(1,153,241,1) 97%, rgba(1,153,241,1) 100%);
-  background: -webkit-linear-gradient(top,  rgba(1,153,241,0) 68%,rgba(1,153,241,0.3) 86%,rgba(1,153,241,0.94) 96%,rgba(1,153,241,1) 97%,rgba(1,153,241,1) 100%);
-  background: linear-gradient(to bottom,  rgba(1,153,241,0) 68%,rgba(1,153,241,0.3) 86%,rgba(1,153,241,0.94) 96%,rgba(1,153,241,1) 97%,rgba(1,153,241,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000199f1', endColorstr='#0199f1',GradientType=0 );
+.bg-home{
+  background:none;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 74%, rgba(0,54,85,0.3) 80%, rgba(1,153,241,0.48) 91%, rgba(1,153,241,0.5) 92%, rgba(1,153,241,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 74%,rgba(0,54,85,0.3) 80%,rgba(1,153,241,0.48) 91%,rgba(1,153,241,0.5) 92%,rgba(1,153,241,1) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 74%,rgba(0,54,85,0.3) 80%,rgba(1,153,241,0.48) 91%,rgba(1,153,241,0.5) 92%,rgba(1,153,241,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#0199f1',GradientType=0 );
 }
 .footer, .footer *, .footer a{
   font-size:13px;

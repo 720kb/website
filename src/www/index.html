@@ -29,12 +29,12 @@
 <body class="bg-body" id="body" ng-controller="HomeController as ctrl">
 	<div class="line-compress center-content nav-mobile fixed top layer2 hide" ngfx-default="hide" ng-class="{'hide': !ctrl.mobileMenu}" ngfx-fade-in="ctrl.mobileMenu">
 		<a href="/" rel="index,follow">Hello</a>
-		<a href="#whoweare" ng-click="ctrl.toggleMobileMenu($event, false)" rel="index,follow">Who we are</a>
-		<a href="#contacts" ng-click="ctrl.toggleMobileMenu($event, false)" rel="index,follow">Support</a>
+		<a href="#whoweare" data-scroll ng-click="ctrl.toggleMobileMenu($event, true)" rel="index,follow">Who we are</a>
+		<a href="#contacts" data-scroll ng-click="ctrl.toggleMobileMenu($event, true)" rel="index,follow">Support</a>
 		<a target="blank" href="http://twitter.com/720kb_" rel="index,follow">News</a>
-		<a href="#contacts" ng-click="ctrl.toggleMobileMenu($event, false)" rel="index,follow">Contact us</a>
+		<a href="#contacts" data-scroll ng-click="ctrl.toggleMobileMenu($event, true)" rel="index,follow">Contact us</a>
 	</div>
-	<div class="home">
+	<div class="home bg-home">
 		<div class="separator30 desktop"></div>
 		<div class="separator15 tablet mobile"></div>
 		<div class="line navbar">
@@ -49,13 +49,13 @@
 						<div class="separator5"></div>
 						<div class="separator3"></div>
 						<a href="/" rel="index,follow">Hello</a>
-						<a href="#whoweare" data-scroll ng-click="ctrl.toggleMobileMenu($event, false)" rel="index,follow">Who we are</a>
-						<a href="#contacts" data-scroll ng-click="ctrl.toggleMobileMenu($event, false)" rel="index,follow">Support</a>
+						<a href="#whoweare" data-scroll ng-click="ctrl.toggleMobileMenu($event)" rel="index,follow">Who we are</a>
+						<a href="#contacts" data-scroll ng-click="ctrl.toggleMobileMenu($event)" rel="index,follow">Support</a>
 						<a target="blank" href="http://twitter.com/720kb_" rel="index,follow">News</a>
-						<a href="#contacts" data-scroll ng-click="ctrl.toggleMobileMenu($event, false)" rel="index,follow">Contact us</a>
+						<a href="#contacts" data-scroll ng-click="ctrl.toggleMobileMenu($event)" rel="index,follow">Contact us</a>
 					</span>
 					<span class="nav-mobile-button fixed top right layer3 tablet mobile">
-						<a href="javascript:void(0)" ng-click="ctrl.toggleMobileMenu()">
+						<a href="javascript:void(0)" ng-click="ctrl.toggleMobileMenu($event, true)">
 							<i class="fa fa-bars color-white"></i>
 						</a>
 					</span>
@@ -63,13 +63,13 @@
 			</div>
 			<div class="separator50"></div>
 		</div>
-		<div class="line-compress line-max bg-home">
+		<div class="line-compress line-max">
 			<div class="slogan">
 				<div class="separator100"></div>
 				<h1 class="color-white">HELLO</h1>
-				<h3 class="color-white">Welcome to a new galaxy.</h3>
+				<h3 class="color-white">Welcome to our galaxy.</h3>
 			</div>
-			<div class="line slider">
+			<div class="line line-max slider">
 					<a target="_blank" href="http://slize.co" rel="index,follow" title="Slize, The seven seconds random videochat.">
 						<img class="slize-logo" src="assets/img/slize.png"/>
 					</a>
@@ -86,10 +86,12 @@
 						<img class="twitter-logo push-right" src="assets/img/twitter-follow.png" title="Follow us on Twitter"/>
 					</a>
 			</div>
-			<video video-home autoplay muted>
-				<source src="galaxy.mp4" type="video/mp4" />
+			<video video-home muted poster="assets/img/video-poster.png">
+				<source src="https://720kb.s3.amazonaws.com/public/video/720kb.mp4" type="video/mp4" />
+				<source src="https://720kb.s3.amazonaws.com/public/video/720kb.webm" type="video/webm" />
+				<source src="https://720kb.s3.amazonaws.com/public/video/720kb.ogv" type="video/ogg" />
 			</video>
-		</div>
+	</div>
 	</div>
 	<div class="line section bg-white">
 		<div class="line-compress line-max" id="whoweare">
@@ -272,7 +274,7 @@
 			</div>
 			<div class="separator100"></div>
 		</div>
-		<div class="line footer">
+		<div class="line footer center-content-tablet">
 			<div class="separator15"></div>
 			<footer class="line-compress line-max">
 				<small class="font-medium">

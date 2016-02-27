@@ -11,21 +11,23 @@
     max-width: 93%;
   }
   .slider .twitter-logo{
-    float: none;
-    position: absolute;
-    right:2%;
+    margin-right:2%;
   }
   .slider .slize-logo{
     max-width: 85px;
+    margin-right:1%;
   }
   .slider .fuffa-logo{
     max-width: 86px;
+    margin-right:1%;
   }
   .slider .realtempo-logo{
-    max-width: 152px;
+    max-width: 135px;
+    margin-right:1%;
   }
   .slider .bitnfc-logo{
     max-width: 86px;
+    margin-right:1%;
   }
   .contacts .btn{
     max-width: 100%;
