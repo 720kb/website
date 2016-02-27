@@ -17,7 +17,9 @@
     margin-top: 240px;
   }
   .slider .twitter-logo{
-    margin-right:2%;
+    position: absolute;
+    right:2%;
+    margin-top:-5px;
   }
   .slider .slize-logo{
     max-width: 85px;

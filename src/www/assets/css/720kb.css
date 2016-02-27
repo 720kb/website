@@ -81,7 +81,7 @@ small{
 }
 .slider .twitter-logo{
   max-width: 56px;
-  margin-right:40px;
+  float:right;
 }
 .navbar{
   width:100%;
