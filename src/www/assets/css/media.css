@@ -3,6 +3,9 @@
   .nav a{
     padding:0;
   }
+  .home{
+    min-height:100vh;
+  }
   .widget{
     width:100%;
     padding:20px 0;
@@ -14,7 +17,8 @@
     height:600px;
   }
   .slider{
-    margin-top: 240px;
+    position: absolute;
+    bottom:10px;
   }
   .slider .twitter-logo{
     position: absolute;
