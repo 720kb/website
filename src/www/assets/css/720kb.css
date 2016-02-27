@@ -193,7 +193,7 @@ video{
   -o-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-filter: saturate(1.05);
+  -webkit-filter: brightness(0.9), saturate(1.05);
 }
 .bg-blue{
   background-color: #0199f1;
