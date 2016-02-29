@@ -1,9 +1,12 @@
 #cookies{
+  position: fixed;
+  z-index:999999999;
+  box-shadow: 0 -1px 10px rgba(0,0,0,0.05);
+  bottom:0;
   font-family: Arial;
-  display:none;
 }#cookies button{
  background:none;
- border: 1px solid rgba(0,0,0,0.2);
+ border: 1px solid rgba(0,0,0,0.3);
  margin-left:5px;
  border-radius:3px;
  padding:4px 12px;

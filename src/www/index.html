@@ -27,6 +27,14 @@
 	<title>720kb</title>
 </head>
 <body class="bg-body" id="body" ng-controller="HomeController as ctrl">
+	<div id="cookies" class="line-compress bg-white">
+	<div class="line-compress line-max">
+		<div class="separator10"></div>
+		We use cookies for your better experience.
+		<button class="toggle-opacity-inverse-hover" type="button" id="720kb-cookie-button">OK</button>
+		<div class="separator10"></div>
+	</div>
+	</div>
 	<div class="line-compress center-content nav-mobile fixed top layer2 hide" ngfx-default="hide" ng-class="{'hide': !ctrl.mobileMenu}" ngfx-fade-in="ctrl.mobileMenu">
 		<a href="#whoweare" data-scroll ng-click="ctrl.toggleMobileMenu($event, true)" rel="index,follow">Who we are</a>
 		<a href="#contacts" data-scroll ng-click="ctrl.toggleMobileMenu($event, true)" rel="index,follow">Support</a>
@@ -94,7 +102,7 @@
 	<div class="line section bg-white">
 		<div class="line-compress line-max" id="whoweare">
 			<div class="separator15 desktop"></div>
-				<div class="separator15 tablet mobile"></div>
+			<div class="separator15 tablet mobile"></div>
 			<div class="separator30"></div>
 			<div class="col7 line-tablet">
 				<h1 class="font-medium">We are on a mission</h1>
@@ -196,7 +204,7 @@
 					<div class="col5">
 						<div class="col2 color-muted line-tablet">
 							<div class="separator5"></div>
-								<div class="separator1"></div>
+							<div class="separator1"></div>
 							<a target="_blank" href="http://github.com/720kb" alt="720kb on github" title="720kb github projects">
 								<img class="toggle-opacity-hover" src="/assets/img/github.png" width="100" alt="720kb on github" title="720kb github projects"/>
 							</a>
@@ -286,40 +294,34 @@
 		</footer>
 		<div class="separator10"></div>
 	</div>
-	<!--<div id="cookies" class="line center-content font-x-small bg-white color-muted">
-	<div class="separator10"></div>
-	We use cookies for your better experience
-	<button class="toggle-opacity-hover" type="button" id="720kb-cookie-button">OK</button>
-	<div class="separator10"></div>
-</div>-->
-<!--<script type="text/javascript" src="assets/js/720kb.cookies.js"></script>-->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
-<script type="text/javascript" src="bower/angular-fx/dist/angular-fx.min.js"></script>
-<script type="text/javascript" src="assets/js/index.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-<script type="text/javascript" src="bower/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-<script type="text/javascript">
-smoothScroll.init({
-	'speed': 900, // Integer. How fast to complete the scroll in milliseconds
-	'easing': 'easeInOutCubic', // Easing pattern to use
-	'offset': 0, // Integer. How far to offset the scrolling anchor location in pixels
-	'updateURL': true, // Boolean. If true, update the URL hash on scroll
-});
-</script>
-<script type="text/javascript">
-(function particlesBoot() {
-	particlesJS.load('particles', 'assets/particles.json');
-}());
-</script>
-<!--G analytics-->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-54873387-1', 'auto');
-ga('send', 'pageview');
-</script>
+	<script type="text/javascript" src="assets/js/720kb.cookies.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+	<script type="text/javascript" src="bower/angular-fx/dist/angular-fx.min.js"></script>
+	<script type="text/javascript" src="assets/js/index.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+	<script type="text/javascript" src="bower/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+	<script type="text/javascript">
+	smoothScroll.init({
+		'speed': 900, // Integer. How fast to complete the scroll in milliseconds
+		'easing': 'easeInOutCubic', // Easing pattern to use
+		'offset': 0, // Integer. How far to offset the scrolling anchor location in pixels
+		'updateURL': true, // Boolean. If true, update the URL hash on scroll
+	});
+	</script>
+	<script type="text/javascript">
+	(function particlesBoot() {
+		particlesJS.load('particles', 'assets/particles.json');
+	}());
+	</script>
+	<!--G analytics-->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-54873387-1', 'auto');
+	ga('send', 'pageview');
+	</script>
 </body>
 </html>
