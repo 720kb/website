@@ -53,44 +53,9 @@
       'scope': true,
       'link': function linkingFunction(scope, element, attr) {
 
-        var hidden
-          , visibilityChange
-          , handleVisibilityChange = function handleVisibilityChange(videoElement) {
-
-            if ($window.document[hidden]) {
-
-              videoElement.pause();
-              videoElement.currentTime = 0;
-              videoElement.playbackRate = 0.65;
-
-            } else {
-
-              videoElement.play();
-            }
-          };
-
-        if (typeof $window.document.hidden !== 'undefined') {
-
-          hidden = 'hidden';
-          visibilityChange = 'visibilitychange';
-        } else if (typeof $window.document.mozHidden !== 'undefined') {
-
-          hidden = 'mozHidden';
-          visibilityChange = 'mozvisibilitychange';
-        } else if (typeof $window.document.msHidden !== 'undefined') {
-
-          hidden = 'msHidden';
-          visibilityChange = 'msvisibilitychange';
-        } else if (typeof $window.document.webkitHidden !== 'undefined') {
-
-          hidden = 'webkitHidden';
-          visibilityChange = 'webkitvisibilitychange';
-        }
-
         element[0].pause();
         element[0].playbackRate = 0.65;
 
-        $window.document.addEventListener(visibilityChange, handleVisibilityChange.bind(this, element[0]), false);
         angular.element(element).bind('timeupdate', function onTimeUpdateVideo(e) {
 
           if (e.target.currentTime > 5.9 &&
