@@ -44,6 +44,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
 }
+h3 i {
+  vertical-align: middle;
+  position: relative;
+  bottom:-0.5px;
+}
 .section{
   -webkit-font-smoothing: antialiased;
 }
