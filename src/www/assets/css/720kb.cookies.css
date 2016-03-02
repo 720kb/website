@@ -2,6 +2,7 @@
   position: fixed;
   z-index:999999999;
   box-shadow: 0 -1px 10px rgba(0,0,0,0.05);
+  background: white;
   bottom:0;
   font-family: Arial;
 }#cookies button{
