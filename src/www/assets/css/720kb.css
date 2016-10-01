@@ -87,6 +87,10 @@ small{
   width:100%;
   vertical-align: middle;
 }
+.slider .yogurl-logo{
+  max-width: 139px;
+  padding-right:1%;
+}
 .slider .slize-logo{
   max-width: 96px;
   padding-right:1%;
