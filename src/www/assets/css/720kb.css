@@ -65,7 +65,7 @@ p, p *{
   font-size:16px;
   line-height: 19px;
 }
- .section p{
+.section p{
   -webkit-font-smoothing: antialiased;
 }
 small{
@@ -73,6 +73,24 @@ small{
 }
 .home{
   height:600px;
+}
+.slider-mobile{
+  margin-top: 80px;
+}
+.slider-mobile a img {
+  margin-bottom: 15px;
+}
+.slider-mobile img.fuffa-logo{
+  width: 100px;
+}
+.slider-mobile img.yogurl-logo{
+  width: 145px;
+}
+.slider-mobile img.bitnfc-logo{
+  width: 100px;
+}
+.slider-mobile img.twitter-logo{
+  width: 40px;
 }
 .slider{
   margin-top:275px;
@@ -108,8 +126,9 @@ small{
   padding-right:1%;
 }
 .slider .twitter-logo{
-  max-width: 56px;
+  max-width: 40px;
   float:right;
+  margin-top:10px;
 }
 .navbar{
   width:100%;

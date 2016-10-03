@@ -12,32 +12,29 @@
   }
   .home{
     height:100vh;
-    min-height: 500px;
+    min-height: 600px;
     -webkit-filter: saturate(1.5);
   }
   .bg-home{
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjU1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg5JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAxOTlmMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-background: -moz-linear-gradient(top,  rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 89%, rgba(1,153,241,1) 100%);
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.3) 89%,rgba(1,153,241,1) 100%);
-background: linear-gradient(to bottom,  rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.3) 89%,rgba(1,153,241,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', endColorstr='#0199f1',GradientType=0 );
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjU1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc2JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjQ0Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMTk5ZjEiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-background: -moz-linear-gradient(top,  rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.44) 76%, rgba(1,153,241,0.4) 100%);
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.44) 76%,rgba(1,153,241,0.4) 100%);
-background: linear-gradient(to bottom,  rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.44) 76%,rgba(1,153,241,0.4) 100%), url('../img/video-poster.png');
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', endColorstr='#660199f1',GradientType=0 );
-
-
-background-size: auto auto, cover;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 89%, rgba(1,153,241,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.3) 89%,rgba(1,153,241,1) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.3) 89%,rgba(1,153,241,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', endColorstr='#0199f1',GradientType=0 );
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjU1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc2JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjQ0Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMTk5ZjEiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.44) 76%, rgba(1,153,241,0.4) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.44) 76%,rgba(1,153,241,0.4) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.44) 76%,rgba(1,153,241,0.4) 100%), url('../img/video-poster.png');
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', endColorstr='#660199f1',GradientType=0 );
+    background-size: auto auto, cover;
     background-position: center center;
   }
   .slider{
-    display: none;
+    display:none;
   }
   .slider .twitter-logo{
     position: absolute;
     right:2%;
-    margin-top:-5px;
   }
   .slider .slize-logo{
     max-width: 85px;
