@@ -1,3 +1,9 @@
+/*mobile*/
+@media screen and (max-width:400px) {
+.latest-project {
+  max-width:100%;
+}
+}
 /*tablet*/
 @media screen and (max-width:800px) {
   .nav a{
@@ -11,7 +17,7 @@
     max-width: 93%;
   }
   .home{
-    height:100vh;
+    height:750px;
     min-height: 600px;
     -webkit-filter: saturate(1.5);
   }

@@ -285,6 +285,21 @@ video{
 .separator3{
   min-height:3px;
 }
+.latest-project {
+  max-width: 300px;
+  position: relative;
+  bottom: -50px;
+}
+.latest-project .link {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgba(0,0,0, .2);
+  box-shadow: 0 0 200px #0295E8;
+}
+.latest-project .link:hover{
+
+  background: rgba(0,0,0, .4);
+}
 #particles{
   max-height: 150px;
   min-height:100px;
