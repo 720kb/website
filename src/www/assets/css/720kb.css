@@ -295,10 +295,10 @@ video{
   border-radius: 5px;
   background: rgba(0,0,0, .2);
 }
-.latest-project .link:hover{
-  
+.latest-project .link:hover {
   box-shadow: 0 0 200px #0295E8;
   background: rgba(0,0,0, .4);
+  transition: all .2s ease-in-out;
 }
 #particles{
   max-height: 150px;
