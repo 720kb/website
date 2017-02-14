@@ -40,11 +40,20 @@
 			<div class="separator30 tablet mobile"></div>
 		</div>
 	</div>
-	<div class="line-compress center-content nav-mobile fixed top layer2 hide" ngfx-default="hide" ng-class="{'hide': !ctrl.mobileMenu}" ngfx-fade-in="ctrl.mobileMenu">
+
+	<span class="nav-mobile-button fixed top right tablet mobile">
+		<a href="javascript:void(0)" ng-click="ctrl.toggleMobileMenu($event, true)">
+			<i class="fa fa-bars color-white"></i>
+		</a>
+	</span>
+	<div class="line-compress center-content nav-mobile fixed top hide" ngfx-default="hide" ng-class="{'hide': !ctrl.mobileMenu}" ngfx-fade-in="ctrl.mobileMenu">
 		<a href="#whoweare" data-scroll ng-click="ctrl.toggleMobileMenu($event, true)" rel="index,follow">Who we are</a>
 		<a href="#contacts" data-scroll ng-click="ctrl.toggleMobileMenu($event, true)" rel="index,follow">Support</a>
 		<a target="blank" href="http://twitter.com/720kb_" rel="index,follow">News</a>
 		<a href="#contacts" data-scroll ng-click="ctrl.toggleMobileMenu($event, true)" rel="index,follow">Contact us</a>
+		<a class="twitter-link" target="_blank" href="http://twitter.com/720kb_" rel="index,follow" title="Follow us on Twitter">
+			<img src="assets/img/twitter-follow.svg" title="Follow us on Twitter"/>
+		</a>
 	</div>
 	<div class="home bg-home">
 		<div class="separator30 desktop"></div>
@@ -65,11 +74,6 @@
 						<a target="blank" href="http://twitter.com/720kb_" rel="index,follow">News</a>
 						<a href="#contacts" data-scroll ng-click="ctrl.toggleMobileMenu($event)" rel="index,follow">Contact us</a>
 					</span>
-					<span class="nav-mobile-button fixed top right layer3 tablet mobile">
-						<a href="javascript:void(0)" ng-click="ctrl.toggleMobileMenu($event, true)">
-							<i class="fa fa-bars color-white"></i>
-						</a>
-					</span>
 				</div>
 			</div>
 			<div class="separator50"></div>
@@ -78,9 +82,9 @@
 			<div class="slogan">
 				<div class="separator100 desktop"></div>
 					<div class="separator50 tablet mobile"></div>
-				<h1 class="color-white">Welcome.</h1>
+				<h1 class="color-white">Behind the simplest things</h1>
 				<div class="separator10 mobile tablet"></div>
-				<h3 class="color-white">Behind the simplest things there is a universe.</h3>
+				<h3 class="color-white">there is a universe.</h3>
 			</div>
 			<div class="line center-content-mobile">
 				<div class="separator50"></div>
@@ -128,7 +132,7 @@
 			<div class="separator15"></div>
 			<div class="line">
 		<a target="_blank" href="http://twitter.com/720kb_" rel="index,follow" title="Follow us on Twitter">
-			<img class="twitter-logo push-right" src="assets/img/twitter-follow.svg" title="Follow us on Twitter"/>
+			<img class="twitter-logo push-right desktop" src="assets/img/twitter-follow.svg" title="Follow us on Twitter"/>
 		</a>
 			</div>
 				</div>
@@ -256,6 +260,8 @@
 	</div>
 	<div class="separator50"></div>
 	<div class="separator30 desktop"></div>
+	<div class="separator50 tablet"></div>
+	<div class="separator50 tablet"></div>
 </div>
 <div class="section line bg-grey color-white">
 	<div class="line-compress line-max">
@@ -265,15 +271,14 @@
 				<div class="col2 color-muted line-tablet">
 					<div class="separator15"></div>
 					<a target="_blank" href="http://github.com/720kb" alt="720kb on github" title="720kb github projects">
-						<img class="toggle-opacity-hover" src="/assets/img/github.png" width="95" alt="720kb on github" title="720kb github projects"/>
+						<i class="fa fa-github fa-4x color-black toggle-opacity-inverse-hover"></i>
 					</a>
 				</div>
 				<div class="col6 color-muted left-content desktop">
 					<div class="separator15"></div>
-					<div class="separator5"></div>
+					<div class="separator15"></div>
 					<div class="separator2"></div>
 					<h3>
-						&nbsp;&nbsp;&nbsp;
 						We think open source
 					</h3>
 				</div>
@@ -281,7 +286,7 @@
 			<div class="col5 right-content">
 				<div class="line color-muted left-content-tablet right-content">
 					<div class="separator15"></div>
-					<div class="separator5"></div>
+					<div class="separator15"></div>
 					<div class="separator2"></div>
 					<a class="color-muted" target="_blank" href="http://github.com/720kb" alt="720kb on github" title="720kb github projects" rel="index,follow">
 						<h3 class="toggle-opacity-inverse-hover color-black line right-content">
