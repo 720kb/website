@@ -20,9 +20,9 @@
       , mailTo = function mailTo(prefix) {
 
         var affix = '@'
-          , antispam = '720kb.net';
+          , antispam = 'gmail.com';
 
-          return prefix + affix + antispam;
+          return '720kb.net' + affix + antispam;
 
       }
       , toggleMobileMenu = function toggleMobileMenu(event, toggle) {
