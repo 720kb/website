@@ -1,0 +1,21 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "720kb",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/720kb/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/720kb/website/issues"
+  },
+  "homepage": "https://github.com/720kb/website#readme",
+  "dependencies": {
+    "angular-fx": "1.0.0",
+    "csshelper": "1.0.1",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#v9.1.1"
+  }
+}
